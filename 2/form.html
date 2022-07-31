@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма подбор программы</title>
+    <base href="https://htmlacademy-adaptive.github.io/2045751-cat-energy-26/2/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__content">
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a href="index.html">
+                <img src="../source/img/logo-mobile-img.svg" width="34" height="38" alt="Логотип сайта с изображением котика">
+              </a>
+            </li>
+            <li class="page-header__item">
+              <a>
+                <img src="../source/img/logo-mobile-name.svg" width="101" height="18" alt="Название сайта">
+              </a>
+            </li>
+            <li class="page-header__item">
+              <span class="visually-hidden">Кнопка меню гамбургер</span>
+              <button class="page-header__button" type="button"></button>
+            </li>
+          </ul>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="nav-item">
+                <a>
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="program-main">
+      <h1 class="program-main__caption">Подбор программы</h1>
+      <p class="program-main__text">
+        Заполните анкету, и мы подберем<br>
+        программу питания для вашего кота
+      </p>
+      <form class="form" action="#" method="post">
+          <section class="form__options">
+            <h2 class="visually-hidden">Характеристики кота</h2>
+            <label class="form__options-label" for="form__options-name">имя:<sup>*</sup></label>
+            <input id="form__options-name" class="form__options-input" name="name" type="text" value="Барсик" required>
+            <label class="form__options-label" for="form__options-weight">вес(кг):<sup>*</sup></label>
+            <input id="form__options-weight" class="form__options-input" name="weight" type="number" value="7" required>
+            <label class="form__options-label" for="form__options-age">возраст:</label>
+            <input id="form__options-age" class="form__options-input" name="age" type="number" value="7">
+          </section>
+
+          <section class="form__tasks">
+            <h2 class="visually-hidden">Выбор цели</h2>
+            <label class="form__tasks-label">
+              <input class="form__tasks-input" name="task" type="radio" value="weight-loss" checked>
+              похудение
+            </label>
+            <label class="form__tasks-label">
+              <input class="form__tasks-input" name="task" type="radio" value="weight-gain">
+              набор массы
+            </label>
+            <label class="form__tasks-label">
+              <input class="form__tasks-input" name="task" type="radio" value="need-advice">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </section>
+
+          <section class="form__contacts">
+            <h2 class="form__contacts-caption">Контактные данные(владельца кота)</h2>
+            <label class="form__contacts-label" for="form__contacts-email">e-mail:<sup>*</sup></label>
+            <input id="form__contacts-email" class="form__contacts-input" name="email" type="email" value="kuklachev@gmail.com" required>
+            <label class="form__contacts-label" for="form__contacts-phone">телефон:<sup>*</sup></label>
+            <input id="form__contacts-phone" class="form__contacts-input" name="phone" type="text" value="8 (960) 900-60-90" required>
+          </section>
+
+          <section class="form__comment">
+            <h2 class="form__comment-caption">Комментарий</h2>
+            <textarea name="form__comment-text" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          </section>
+
+          <section class="form__extra">
+            <h2 class="form__extra-caption">Дополнительно</h2>
+            <label class="form__extra-label">
+              <input class="form__extra-input" name="sugar-substitute" type="checkbox" checked>
+              сахарозаменитель
+            </label>
+            <label class="form__extra-label">
+              <input class="form__extra-input" name="drinking-water" type="checkbox">
+              питьевая вода
+            </label>
+            <label class="form__extra-label">
+              <input class="form__extra-input" name="milk" type="checkbox">
+              молоко
+            </label>
+            <label class="form__extra-label">
+              <input class="form__extra-input" name="vitamins" type="checkbox">
+              витамины
+            </label>
+          </section>
+
+          <div class="form__button">
+            <button class="form__button-send" type="submit">
+              отправить заявку
+            </button>
+          </div>
+          <div class="form__info">
+            <p class="form__info-text">
+              * — Обязательные поля
+            </p>
+          </div>
+      </form>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Адрес интернет-магазина</h2>
+          <p class="contacts__slogan">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__address">
+            ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург
+          </address>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Интерактивная карта</h2>
+        <div class="map__wrapper">
+          <img src="../source/img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a>
+            <img class="page-footer__logo-img" src="../source/img/page-footer-logo.svg" width="128" height="24" alt="Название интернет магазина">
+          </a>
+        </div>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#">
+                <img src="../source/img/vk.svg" width="27" height="17" alt="В контакте">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <img src="../source/img/youtube.svg" width="24" height="19" alt="Ютуб">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <img src="../source/img/telegram.svg" width="20" height="17" alt="Телеграм">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="academy-logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <p class="academy-logo__name">
+              HTML Academy
+            </p>
+          </a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <img class="academy-logo__img" src="../source/img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
