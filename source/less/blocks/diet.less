@@ -1,5 +1,48 @@
+@import "mixins";
+@import "vars";
+
 .diet__wrapper {
   border: 1px solid red;
-  width: 280px;
-  margin: 0 auto;
+  .wrapper;
+}
+
+.diet__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.diet__item {
+  background-color: @diet-bg-color;
+}
+
+.diet__item-title {
+  margin: 0;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.diet__item-description {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @main-color-text;
+}
+
+.diet__link {
+  display: block;
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
 }

@@ -1,4 +1,6 @@
 @import "vars";
+@import "mixins";
+
 
 .promo {
   min-height: 302px;
@@ -20,8 +22,7 @@
 }
 
 .promo__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  .wrapper;
 }
 
 .promo__caption {
@@ -30,10 +31,21 @@
   padding-bottom: 25px;
   position: relative;
   z-index: 1;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
 }
 
 .promo__slogan {
   margin: 0;
   position: relative;
   z-index: 1;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
 }
