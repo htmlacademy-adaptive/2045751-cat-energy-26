@@ -1,8 +1,11 @@
+// out: "../style.css"
+
 @import "vars";
 @import "mixins";
 
 
 .promo {
+  position: relative;
   min-height: 302px;
   margin-bottom: 198px;
   background-image: url("@{img-adress}promo-cat-img.png");
@@ -31,10 +34,7 @@
   padding-bottom: 25px;
   position: relative;
   z-index: 1;
-  font-family: 'Oswald';
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  .h1-captions;
   color: #ffffff;
 }
 
@@ -48,4 +48,24 @@
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+}
+
+.promo__poster {
+  position: relative;
+}
+
+.promo__poster-img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%);
+}
+
+.promo__poster-link {
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: -150px;
+  transform: translate(-50%);
 }
