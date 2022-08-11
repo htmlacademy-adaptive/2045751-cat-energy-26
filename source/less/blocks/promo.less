@@ -7,22 +7,20 @@
 .promo {
   position: relative;
   min-height: 302px;
-  margin-bottom: 198px;
+  margin-bottom: 190px;
   background-image: url("@{img-adress}promo-cat-img.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  position: relative;
   text-align: center;
-}
-
-.promo::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  background-color: @promo-bg-color;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: @promo-bg-color;
+  }
 }
 
 .promo__wrapper {
@@ -52,33 +50,29 @@
 }
 
 .promo__poster {
-  position: relative;
+  position: absolute;
+  .wrapper();
 }
 
 .promo__poster-img {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
+  position: relative;
+  display: block;
   top: 30px;
-  transform: translate(-50%);
+  padding-bottom: 30px;
 }
 
 .promo__poster-link {
   display: block;
-  width: 280px;
-  text-decoration: none;
-  text-transform: uppercase;
+  width: 100%;
+  background-color: #68B738;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
   color: #ffffff;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  background-color:  #68B738;
-  position: absolute;
-  left: 50%;
-  bottom: -150px;
-  transform: translate(-50%);
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
