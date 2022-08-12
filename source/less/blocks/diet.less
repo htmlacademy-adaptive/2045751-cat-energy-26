@@ -4,7 +4,7 @@
 @import "vars";
 
 .diet__wrapper {
-  .wrapper;
+  .wrapper();
 }
 
 .diet__list {
@@ -17,6 +17,9 @@
 
 .diet__item {
   background-color: @diet-bg-color;
+}
+
+.diet__item:not(:nth-child(2n)) {
   margin-bottom: 20px;
 }
 
@@ -32,7 +35,7 @@
 
 .diet__item-description {
   margin: 0;
-  .main-text;
+  .main-text();
 }
 
 .diet__link {

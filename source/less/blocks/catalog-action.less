@@ -1,0 +1,33 @@
+// out: "../style.css"
+
+@import "vars";
+@import "mixins";
+
+
+.catalog-action__wrapper {
+  position: relative;
+  .wrapper();
+  min-height: 290px;
+  background-image: url("@{img-adress}catalog-action-foto.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.catalog-action__img {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+

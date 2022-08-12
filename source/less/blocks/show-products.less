@@ -1,0 +1,39 @@
+// out: "../style.css"
+
+@import "vars";
+@import "mixins";
+
+.show-products {
+  .wrapper();
+}
+
+.show-products__title {
+  margin: 0;
+  .slogan();
+  text-align: center;
+}
+
+.show-products__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: @main-color-text;
+  text-align: center;
+}
+
+.show-products__button-show {
+  background-color: #F2F2F2;
+  border: none;
+  width: 100%;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @main-color-text;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
