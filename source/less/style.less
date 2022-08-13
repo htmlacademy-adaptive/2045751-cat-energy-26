@@ -28,8 +28,32 @@ body {
   overflow: hidden;
 }
 
-.catalog-main__caption {
-  .h1-captions;
+.catalog-main__caption,
+.program-main__caption {
+  .h1-captions();
+}
+
+.form__wrapper {
+  .wrapper();
+}
+
+.form__slogan {
+  margin: 0;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__info-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 }
 
 @import "./blocks/page-header.less";
@@ -45,6 +69,11 @@ body {
 @import "./blocks/show-products.less";
 @import "./blocks/additional-products.less";
 @import "./blocks/catalog-action.less";
+@import "./blocks/form-options.less";
+@import "./blocks/form-tasks.less";
+@import "./blocks/form-contacts.less";
+@import "./blocks/form-comment.less";
+@import "./blocks/form-extra.less";
 
 
 

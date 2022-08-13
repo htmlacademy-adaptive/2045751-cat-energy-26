@@ -1,0 +1,31 @@
+// out: "../style.css"
+
+@import "vars";
+@import "mixins";
+
+.form__extra-title {
+  margin: 0;
+  .form-title();
+}
+
+.form__extra-label {
+  .form-text();
+  color: #222222;
+  display: flex;
+}
+
+.form__button-send {
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #68B738;
+}
