@@ -1,7 +1,7 @@
 // out: "../style.css"
 
-@import "vars";
-@import "mixins";
+@import "../vars.less";
+@import "../mixins.less";
 
 .catalog__wrapper {
   .wrapper();
@@ -37,6 +37,7 @@
 .catalog__item-title {
   margin: 0;
   .slogan();
+  color: @fourth-color-text;
 }
 
 .catalog__options-list {
@@ -45,7 +46,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: @main-color-text;
+  color: @primary-color-text;
 }
 
 .catalog__item-link {

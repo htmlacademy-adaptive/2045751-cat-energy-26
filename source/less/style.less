@@ -12,6 +12,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
   font-family: Arial, sans-serif;
 }
 
@@ -31,29 +32,7 @@ body {
 .catalog-main__caption,
 .program-main__caption {
   .h1-captions();
-}
-
-.form__wrapper {
-  .wrapper();
-}
-
-.form__slogan {
-  margin: 0;
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.form__info-text {
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
+  color: @secondary-color-text;
 }
 
 @import "./blocks/page-header.less";
@@ -62,18 +41,23 @@ body {
 @import "./blocks/diet.less";
 @import "./blocks/instructions.less";
 @import "./blocks/example.less";
+@import "./blocks/slider.less";
 @import "./blocks/contacts.less";
 @import "./blocks/map.less";
-@import "./blocks/footer.less";
+@import "./blocks/page-footer.less";
+@import "./blocks/socials.less";
+@import "./blocks/academy-logo.less";
 @import "./blocks/catalog.less";
 @import "./blocks/show-products.less";
 @import "./blocks/additional-products.less";
 @import "./blocks/catalog-action.less";
-@import "./blocks/form-options.less";
-@import "./blocks/form-tasks.less";
-@import "./blocks/form-contacts.less";
-@import "./blocks/form-comment.less";
-@import "./blocks/form-extra.less";
+@import "./blocks/form.less";
+@import "./blocks/form__options.less";
+@import "./blocks/form__tasks.less";
+@import "./blocks/form__contacts.less";
+@import "./blocks/form__comment.less";
+@import "./blocks/form__extra.less";
+@import "./blocks/form__info.less";
 
 
 

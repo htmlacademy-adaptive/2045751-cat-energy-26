@@ -1,7 +1,7 @@
 // out: "../style.css"
 
-@import "vars";
-@import "mixins";
+@import "../vars.less";
+@import "../mixins.less";
 
 .instructions__wrapper {
   .wrapper;
@@ -9,11 +9,12 @@
 
 .instructions__caption {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  color: @secondary-color-text;
 }
 
 .instructions__list {

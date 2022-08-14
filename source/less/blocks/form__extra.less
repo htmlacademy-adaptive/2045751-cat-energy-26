@@ -1,7 +1,7 @@
 // out: "../style.css"
 
-@import "vars";
-@import "mixins";
+@import "../vars.less";
+@import "../mixins.less";
 
 .form__extra-title {
   margin: 0;
@@ -10,7 +10,6 @@
 
 .form__extra-label {
   .form-text();
-  color: #222222;
   display: flex;
 }
 
@@ -18,13 +17,13 @@
   width: 100%;
   border: 0;
   outline: none;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @tertiary-color-text;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #68B738;

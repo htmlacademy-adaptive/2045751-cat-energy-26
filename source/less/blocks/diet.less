@@ -1,7 +1,7 @@
 // out: "../style.css"
 
-@import "mixins";
-@import "vars";
+@import "../vars.less";
+@import "../mixins.less";
 
 .diet__wrapper {
   .wrapper();
@@ -25,12 +25,13 @@
 
 .diet__item-title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  color: @secondary-color-text;
 }
 
 .diet__item-description {
@@ -41,11 +42,11 @@
 .diet__link {
   display: block;
   text-decoration: none;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #000000;
+  color: @secondary-color-text;
 }

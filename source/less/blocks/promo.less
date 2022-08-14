@@ -1,14 +1,14 @@
 // out: "../style.css"
 
-@import "vars";
-@import "mixins";
+@import "../vars.less";
+@import "../mixins.less";
 
 
 .promo {
   position: relative;
   min-height: 302px;
   margin-bottom: 190px;
-  background-image: url("@{img-adress}promo-cat-img.png");
+  background-image: url("@{img-address}promo-cat-img.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   text-align: center;
@@ -34,7 +34,7 @@
   position: relative;
   z-index: 1;
   .h1-captions;
-  color: #ffffff;
+  color: @tertiary-color-text;
 }
 
 .promo__slogan {
@@ -46,7 +46,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #ffffff;
+  color: @tertiary-color-text;
 }
 
 .promo__poster {
@@ -65,14 +65,14 @@
   display: block;
   width: 100%;
   background-color: #68B738;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @tertiary-color-text;
   padding-top: 7px;
   padding-bottom: 7px;
 }

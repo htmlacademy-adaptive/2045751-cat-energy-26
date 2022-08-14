@@ -1,7 +1,7 @@
 // out: "../style.css"
 
-@import "vars";
-@import "mixins";
+@import "../vars.less";
+@import "../mixins.less";
 
 .additional-products {
   .wrapper();
@@ -9,11 +9,12 @@
 
 .additional-products__caption {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  color: @secondary-color-text;
 }
 
 .additional-products__list {
@@ -30,7 +31,7 @@
 .additional-products__item-title {
   margin: 0;
   .additional-products-title();
-  color: #222222;
+  color: @fourth-color-text;
 }
 
 .additional-products__options-list {

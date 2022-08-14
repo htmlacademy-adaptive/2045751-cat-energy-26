@@ -1,7 +1,7 @@
 // out: "../style.css"
 
-@import "vars";
-@import "mixins";
+@import "../vars.less";
+@import "../mixins.less";
 
 .show-products {
   .wrapper();
@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: @main-color-text;
+  color: @primary-color-text;
   text-align: center;
 }
 
@@ -27,13 +27,13 @@
   background-color: #F2F2F2;
   border: none;
   width: 100%;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: @main-color-text;
+  color: @primary-color-text;
   padding-top: 10px;
   padding-bottom: 10px;
 }

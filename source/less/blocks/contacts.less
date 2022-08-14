@@ -1,7 +1,7 @@
 // out: "../style.css"
 
-@import "vars";
-@import "mixins";
+@import "../vars.less";
+@import "../mixins.less";
 
 
 .contacts__wrapper {
@@ -11,7 +11,7 @@
 .contacts__slogan {
   margin: 0;
   .slogan();
-  color: #111111;
+  color: @fifth-color-text;
 }
 
 .contacts__address {
