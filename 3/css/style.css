@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
   font-family: Arial, sans-serif;
 }
 .visually-hidden {
@@ -23,41 +24,10 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.catalog-main__caption,
-.program-main__caption {
-  width: 280px;
-  margin: 0 auto;
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-}
-.form__wrapper {
-  width: 280px;
-  margin: 0 auto;
-}
-.form__slogan {
-  margin: 0;
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-.form__info-text {
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-}
 .button-order {
   display: block;
   width: 100%;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -71,7 +41,7 @@ body {
   background-color: #68B738;
 }
 .additional-products-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -85,13 +55,13 @@ body {
   color: #444444;
 }
 .form-text {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: #000000;
 }
 .form-inputs {
   height: 46px;
@@ -105,11 +75,12 @@ body {
   box-sizing: border-box;
 }
 .form-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  color: #000000;
 }
 .page-header {
   padding-top: 10px;
@@ -166,7 +137,7 @@ body {
   z-index: 1;
   width: 280px;
   margin: 0 auto;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -199,7 +170,7 @@ body {
   display: block;
   width: 100%;
   background-color: #68B738;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -229,12 +200,13 @@ body {
 }
 .diet__item-title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  color: #000000;
 }
 .diet__item-description {
   margin: 0;
@@ -247,7 +219,7 @@ body {
 .diet__link {
   display: block;
   text-decoration: none;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -261,11 +233,12 @@ body {
 }
 .instructions__caption {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  color: #000000;
 }
 .instructions__list {
   margin: 0;
@@ -292,11 +265,12 @@ body {
 }
 .example__caption {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  color: #000000;
 }
 .example__text {
   margin: 0;
@@ -313,11 +287,12 @@ body {
 }
 .example__option {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  color: #000000;
 }
 .example__comment {
   margin: 0;
@@ -327,16 +302,17 @@ body {
   line-height: 12px;
 }
 .example__result {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #000000;
 }
 .slider__past,
 .slider__present {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -349,7 +325,7 @@ body {
 }
 .contacts__slogan {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -397,6 +373,16 @@ body {
 .academy-logo__capital {
   text-transform: uppercase;
 }
+.catalog-main__caption {
+  width: 280px;
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
 .catalog__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -425,12 +411,13 @@ body {
 }
 .catalog__item-title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #222222;
 }
 .catalog__options-list {
   margin: 0;
@@ -443,7 +430,7 @@ body {
 .catalog__item-link {
   display: block;
   width: 100%;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -462,7 +449,7 @@ body {
 }
 .show-products__title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -483,7 +470,7 @@ body {
   background-color: #F2F2F2;
   border: none;
   width: 100%;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -499,11 +486,12 @@ body {
 }
 .additional-products__caption {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  color: #000000;
 }
 .additional-products__list {
   margin: 0;
@@ -516,7 +504,7 @@ body {
 }
 .additional-products__item-title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -544,7 +532,7 @@ body {
 .additional-products__link {
   display: block;
   width: 100%;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -596,6 +584,30 @@ body {
   bottom: 43px;
   transform: translate(-50%, 0);
 }
+.program-main__caption {
+  width: 280px;
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+.form__slogan {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
 .form__options-inputs {
   height: 46px;
   display: flex;
@@ -603,22 +615,22 @@ body {
   justify-content: space-between;
 }
 .form__options-label {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: #000000;
 }
 .form__options-input {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: #000000;
   border: 1px solid #E7E7E7;
   outline: none;
   box-sizing: border-box;
@@ -636,22 +648,23 @@ body {
   height: inherit;
 }
 .form__tasks-label {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: #000000;
   color: #222222;
   display: flex;
 }
 .form__contacts-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  color: #000000;
 }
 .form__contacts-inputs {
   height: 46px;
@@ -660,22 +673,22 @@ body {
   justify-content: space-between;
 }
 .form__contacts-label {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: #000000;
 }
 .form__contacts-input {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: #000000;
   border: 1px solid #E7E7E7;
   outline: none;
   box-sizing: border-box;
@@ -690,20 +703,21 @@ body {
 }
 .form__comment-label {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  color: #000000;
 }
 .form__comment-text {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: #000000;
   width: 100%;
   text-align: center;
   border: 0;
@@ -712,28 +726,28 @@ body {
 }
 .form__extra-title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  color: #000000;
 }
 .form__extra-label {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
-  color: #222222;
+  color: #000000;
   display: flex;
 }
 .form__button-send {
   width: 100%;
   border: 0;
   outline: none;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -743,5 +757,14 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #68B738;
+}
+.form__info {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
