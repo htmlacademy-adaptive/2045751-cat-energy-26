@@ -6,3 +6,47 @@
 .nav {
   display: block;
 }
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item__link {
+  .nav-link();
+  position: relative;
+}
+
+@media (min-width: @tablet) {
+  .nav {
+    align-self: end;
+  }
+  .nav-list {
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-item {
+    min-height: 36px;
+  }
+  .nav-item:not(:last-child) {
+    padding-right: 35px;
+  }
+  .nav-item__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .nav-item__link--active {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: @nav-link-active;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+  }
+}
