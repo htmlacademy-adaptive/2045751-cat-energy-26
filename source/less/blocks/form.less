@@ -1,0 +1,130 @@
+// out: "../style.css"
+
+@import "../vars.less";
+@import "../mixins.less";
+
+.form__wrapper {
+  .wrapper();
+}
+
+.form__slogan {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @secondary-color-text;
+}
+
+.form__options-inputs {
+  .form-inputs();
+ }
+
+.form__options-label {
+  .form-text();
+}
+
+.form__options-input {
+  .form-text();
+  .form-input();
+}
+
+.form__input-name {
+  width: 228px;
+  height: inherit;
+}
+
+.form__input-weight {
+  width: 204px;
+  height: inherit;
+}
+
+.form__input-age {
+  width: 172px;
+  height: inherit;
+}
+
+.form__tasks-label {
+  .form-text();
+  color: @fourth-color-text;
+  display: flex;
+}
+
+.form__contacts-title {
+  .form-title();
+}
+
+.form__contacts-inputs {
+  .form-inputs();
+ }
+
+ .form__contacts-label {
+  .form-text();
+}
+
+.form__contacts-input {
+  .form-text();
+  .form-input();
+}
+
+.form__input-email {
+  width: 219px;
+  height: inherit;
+}
+
+.form__input-phone {
+  width: 204px;
+  height: inherit;
+}
+
+.form__comment-label {
+  margin: 0;
+  .form-title();
+}
+
+.form__comment-text {
+  .form-text();
+  width: 100%;
+  text-align: center;
+  border: 0;
+  outline: none;
+  resize: none;
+}
+
+.form__extra-title {
+  margin: 0;
+  .form-title();
+}
+
+.form__extra-label {
+  .form-text();
+  display: flex;
+}
+
+.form__button-send {
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @tertiary-color-text;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #68B738;
+}
+
+.form__info {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: @secondary-color-text;
+}
