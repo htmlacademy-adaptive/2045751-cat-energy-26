@@ -16,7 +16,30 @@
 }
 
 .diet__item {
+  position: relative;
   background-color: @diet-bg-color;
+  padding-top: 30px;
+  padding-right: 33px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  &-slim::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    background-image: url("@{img-address}diet-slim.svg");
+    left: 22px;
+    top: 22px;
+  }
+  &-mass::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 50px;
+    background-image: url("@{img-address}diet-mass.svg");
+    left: 13px;
+    top: 22px;
+  }
 }
 
 .diet__item:not(:nth-child(2n)) {
@@ -25,17 +48,20 @@
 
 .diet__item-title {
   margin: 0;
+  margin-left: 75px;
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  padding-bottom: 30px;
   color: @secondary-color-text;
 }
 
 .diet__item-description {
   margin: 0;
+  width: 227px;
   .main-text();
 }
 
@@ -49,4 +75,57 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @secondary-color-text;
+}
+
+@media (min-width: @tablet) {
+  .diet__wrapper {
+    .wrapper-tablet();
+  }
+  .diet__list {
+    width: 100%;
+  }
+  .diet__item {
+    border: 1px solid red;
+    padding-top: 77px;
+    padding-right: 33px;
+    padding-bottom: 53px;
+    padding-left: 52px;
+    &-slim::before {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 211px;
+      background-image: url("@{img-address}diet-tablet-slim.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      left: 62px;
+      top: 50%;
+      transform: translate();
+    }
+    &-mass::before {
+      content: "";
+      position: absolute;
+      width: 268px;
+      height: 200px;
+      background-image: url("@{img-address}diet-tablet-mass.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      left: 62px;
+      top: 22px;
+    }
+  }
+  .diet__item-title {
+    margin-left: 0;
+    padding-bottom: 24px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .diet__item-description {
+    width: 340px;
+    .main-text-tablet();
+  }
+  .diet__item:not(:nth-child(2n)) {
+    margin-bottom: 30px;
+  }
 }

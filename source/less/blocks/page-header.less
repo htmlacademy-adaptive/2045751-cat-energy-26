@@ -28,7 +28,8 @@
   display: block;
 }
 
-.page-header__logo-tablet {
+.page-header__logo-tablet,
+.page-header__logo-desktop {
   display: none;
 }
 
@@ -49,6 +50,9 @@
 }
 
 @media (min-width: @tablet) {
+  .page-header {
+    padding-top: 24px;
+  }
   .page-header__wrapper {
     .wrapper-tablet();
     min-height: 54px;
@@ -70,5 +74,29 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: @desktop) {
+  .page-header {
+    padding-top: 53px;
+  }
+  .page-header__wrapper {
+    .wrapper-desktop();
+    min-height: 59px;
+    display: flex;
+  }
+  .page-header__logo-tablet {
+    display: none;
+  }
+  .page-header__logo-desktop {
+    display: block;
+  }
+  .page-header__btn {
+    display: none;
+  }
+  .page-header__list {
+    margin-right: auto;
+  }
+}
+
 
 

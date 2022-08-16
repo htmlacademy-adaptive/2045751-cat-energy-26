@@ -1,0 +1,186 @@
+.button-order {
+  display: block;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #68B738;
+}
+.additional-products-title {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+.additional-products-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+.form-text {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.form-inputs {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-input {
+  border: 1px solid #E7E7E7;
+  outline: none;
+  box-sizing: border-box;
+}
+.form-title {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+.diet__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+.diet__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.diet__item {
+  position: relative;
+  background-color: #F2F2F2;
+  padding-top: 30px;
+  padding-right: 33px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+}
+.diet__item-slim::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/diet-slim.svg");
+  left: 22px;
+  top: 22px;
+}
+.diet__item-mass::before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/diet-mass.svg");
+  left: 13px;
+  top: 22px;
+}
+.diet__item:not(:nth-child(2n)) {
+  margin-bottom: 20px;
+}
+.diet__item-title {
+  margin: 0;
+  margin-left: 75px;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  color: #000000;
+}
+.diet__item-description {
+  margin: 0;
+  width: 227px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.diet__link {
+  display: block;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .diet__wrapper {
+    width: 708px;
+  }
+  .diet__list {
+    width: 100%;
+  }
+  .diet__item {
+    border: 1px solid red;
+    padding-top: 77px;
+    padding-right: 33px;
+    padding-bottom: 53px;
+    padding-left: 52px;
+  }
+  .diet__item-slim::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/diet-tablet-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    left: 62px;
+    top: 50%;
+    transform: translate();
+  }
+  .diet__item-mass::before {
+    content: "";
+    position: absolute;
+    width: 268px;
+    height: 200px;
+    background-image: url("../img/diet-tablet-mass.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    left: 62px;
+    top: 22px;
+  }
+  .diet__item-title {
+    margin-left: 0;
+    padding-bottom: 24px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .diet__item-description {
+    width: 340px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .diet__item:not(:nth-child(2n)) {
+    margin-bottom: 30px;
+  }
+}

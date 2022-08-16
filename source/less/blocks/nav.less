@@ -37,6 +37,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    color: @secondary-color-text;
   }
   .nav-item__link--active {
     &::before {
@@ -48,5 +49,23 @@
       left: 0;
       bottom: -8px;
     }
+  }
+}
+
+@media (min-width: @desktop) {
+  .nav-item__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: green;
+  }
+  .nav-list {
+    width: 478px;
+  }
+  .nav-item {
+    min-height: 40px;
+  }
+  .nav-item:not(:last-child) {
+    padding-right: 32px;
   }
 }
