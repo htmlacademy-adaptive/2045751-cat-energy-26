@@ -56,39 +56,38 @@
   line-height: 26px;
   color: #000000;
 }
-.contacts__wrapper {
-  width: 280px;
-  margin: 0 auto;
+.academy-logo {
   display: flex;
+  width: 100%;
+  min-height: 34px;
+  align-items: center;
+  padding-bottom: 22px;
+  margin-top: 43px;
 }
-.contacts__slogan {
-  margin: 0;
-  width: 139px;
+.academy-logo__name-link {
+  text-decoration: none;
+  display: block;
   margin-right: auto;
-  font-family: 'Oswald', sans-serif;
+}
+.academy-logo__name-text {
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-}
-.contacts__address {
-  width: 139px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   color: #444444;
 }
+.academy-logo__capital {
+  text-transform: uppercase;
+}
+.academy-logo__img {
+  display: block;
+}
 @media (min-width: 768px) {
-  .contacts__wrapper {
-    width: 708px;
-  }
-  .contacts__slogan {
-    padding-left: 40px;
-  }
-  .contacts__address {
-    padding-right: 40px;
+  .academy-logo {
+    padding-bottom: 0;
+    margin-top: 0;
+    width: 163px;
+    margin-left: 129px;
   }
 }

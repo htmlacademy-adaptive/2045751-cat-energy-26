@@ -3,8 +3,20 @@
 @import "../vars.less";
 @import "../mixins.less";
 
+
+.academy-logo {
+  display: flex;
+  width: 100%;
+  min-height: 34px;
+  align-items: center;
+  padding-bottom: 22px;
+  margin-top: 43px;
+}
+
 .academy-logo__name-link {
   text-decoration: none;
+  display: block;
+  margin-right: auto;
 }
 
 .academy-logo__name-text {
@@ -18,4 +30,17 @@
 
 .academy-logo__capital {
   text-transform: uppercase;
+}
+
+.academy-logo__img {
+  display: block;
+}
+
+@media(min-width: @tablet) {
+  .academy-logo {
+    padding-bottom: 0;
+    margin-top: 0;
+    width: 163px;
+    margin-left: 129px;
+  }
 }
