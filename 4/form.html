@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/2045751-cat-energy-26/4/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a>
+              <img class="page-header__logo-mobile" src="img/logo-mobile-img.svg" width="34" height="38" alt="Логотип сайта с изображением котика">
+            </a>
+            <a>
+              <img class="page-header__logo-tablet" src="img/logo-tablet-img.svg" width="174" height="52" alt="Логотип сайта с изображением котика">
+            </a>
+            <a>
+              <img class="page-header__logo-desktop" src="img/logo-desktop-img.svg" width="202" height="59" alt="Логотип сайта с изображением котика">
+            </a>
+          </li>
+          <li class="page-header__item">
+            <a>
+              <img class="page-header__name-mobile" src="img/logo-mobile-name.svg" width="101" height="18" alt="Название сайта">
+            </a>
+          </li>
+          <li class="page-header__item page-header__item-burger">
+            <button class="page-header__btn" type="button">
+              <span class="visually-hidden">Кнопка меню гамбургер</span>
+            </button>
+          </li>
+        </ul>
+        <nav class="nav nav--active">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-item__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item__link nav-item__link--active" href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="program-main">
+      <h1 class="program-main__caption">Подбор программы</h1>
+      <form class="form" action="#" method="post">
+        <div class="form__wrapper">
+          <p class="form__slogan">
+            Заполните анкету, и мы подберем<br>
+            программу питания для вашего кота
+          </p>
+          <section class="form__options">
+            <h2 class="visually-hidden">Характеристики кота</h2>
+            <div class="form__options-inputs">
+              <label class="form__options-label" for="form__options-name">имя:<sup>*</sup></label>
+              <input id="form__options-name" class="form__options-input form__input-name" name="name" type="text" value="Барсик" required>
+            </div>
+            <div class="form__options-inputs">
+              <label class="form__options-label" for="form__options-weight">вес(кг):<sup>*</sup></label>
+              <input id="form__options-weight" class="form__options-input form__input-weight" name="weight" type="number" value="7" required>
+            </div>
+            <div class="form__options-inputs">
+              <label class="form__options-label" for="form__options-age">возраст:</label>
+              <input id="form__options-age" class="form__options-input form__input-age" name="age" type="number" value="7">
+            </div>
+          </section>
+
+          <section class="form__tasks">
+            <h2 class="visually-hidden">Выбор цели</h2>
+            <label class="form__tasks-label">
+              <input class="form__tasks-input" name="task" type="radio" value="weight-loss" checked>
+              похудение
+            </label>
+            <label class="form__tasks-label">
+              <input class="form__tasks-input" name="task" type="radio" value="weight-gain">
+              набор массы
+            </label>
+            <label class="form__tasks-label">
+              <input class="form__tasks-input" name="task" type="radio" value="need-advice">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </section>
+
+          <section class="form__contacts">
+            <h2 class="form__contacts-title">Контактные данные<br>(владельца кота)</h2>
+            <div class="form__contacts-inputs">
+              <label class="form__contacts-label" for="form__contacts-email">e-mail:<sup>*</sup></label>
+              <input id="form__contacts-email" class="form__contacts-input form__input-email" name="email" type="email" value="kuklachev@gmail.com" required>
+            </div>
+            <div class="form__contacts-inputs">
+              <label class="form__contacts-label" for="form__contacts-phone">телефон:<sup>*</sup></label>
+              <input id="form__contacts-phone" class="form__contacts-input form__input-phone" name="phone" type="text" value="8 (960) 900-60-90" required>
+            </div>
+          </section>
+
+          <section class="form__comment">
+            <h2 class="visually-hidden">Раздел комментарий</h2>
+            <label class="form__comment-label" for="form__comment">Комментарий</label>
+            <textarea id="form__comment" class="form__comment-text" name="form__comment-text" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          </section>
+
+          <section class="form__extra">
+            <h2 class="form__extra-title">Дополнительно</h2>
+            <label class="form__extra-label">
+              <input class="form__extra-input" name="sugar-substitute" type="checkbox" checked>
+              сахарозаменитель
+            </label>
+            <label class="form__extra-label">
+              <input class="form__extra-input" name="drinking-water" type="checkbox">
+              питьевая вода
+            </label>
+            <label class="form__extra-label">
+              <input class="form__extra-input" name="milk" type="checkbox">
+              молоко
+            </label>
+            <label class="form__extra-label">
+              <input class="form__extra-input" name="vitamins" type="checkbox">
+              витамины
+            </label>
+            <button class="form__button-send" type="submit">
+              отправить заявку
+            </button>
+          </section>
+          <p class="form__info">
+            * — Обязательные поля
+          </p>
+        </div>
+      </form>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Адрес интернет-магазина</h2>
+          <p class="contacts__slogan">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__address">
+            ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург
+          </address>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Интерактивная карта</h2>
+        <div class="map__wrapper">
+          <img src="img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a>
+            <img class="page-footer__logo-img" src="img/page-footer-logo.svg" width="128" height="24" alt="Название интернет магазина">
+          </a>
+        </div>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#">
+                <img src="img/vk.svg" width="27" height="17" alt="В контакте">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <img src="img/youtube.svg" width="24" height="19" alt="Ютуб">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <img src="img/telegram.svg" width="20" height="17" alt="Телеграм">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="academy-logo">
+          <a class="academy-logo__name-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <p class="academy-logo__name-text">
+              <span class="academy-logo__capital">html</span> Academy
+            </p>
+          </a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <img class="academy-logo__img" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
