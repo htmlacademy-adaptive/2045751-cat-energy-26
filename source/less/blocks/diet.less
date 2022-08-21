@@ -18,7 +18,7 @@
   background-color: @diet-bg-color;
   padding-top: 30px;
   padding-right: 33px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   padding-left: 20px;
 }
 
@@ -43,7 +43,7 @@
   margin: 0;
   width: 227px;
   .main-text();
-  padding-bottom: 42px;
+  padding-bottom: 38px;
 }
 
 .diet__link {
@@ -82,5 +82,37 @@
   }
   .diet__item:not(:nth-child(2n)) {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .diet__wrapper {
+    .wrapper-desktop();
+  }
+  .diet__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 570px);
+    column-gap: 80px;
+  }
+  .diet__item {
+    padding-top: 77px;
+    padding-right: 51px;
+    padding-bottom: 59px;
+    padding-left: 52px;
+  }
+  .diet__item:not(:nth-child(2n)) {
+    margin-bottom: 0;
+  }
+  .diet__item-title {
+    text-align: center;
+    padding-bottom: 73px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .diet__item-description {
+    width: 467px;
+    .main-text-tablet();
+    padding-bottom: 23px;
   }
 }

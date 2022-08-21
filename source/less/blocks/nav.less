@@ -57,7 +57,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: green;
+    color: @tertiary-color-text;
   }
   .nav-list {
     width: 478px;
@@ -67,5 +67,10 @@
   }
   .nav-item:not(:last-child) {
     padding-right: 32px;
+  }
+  .nav-item__link--active {
+    &::before {
+      background-color: @tertiary-color-text;
+    }
   }
 }

@@ -12,13 +12,11 @@
         <ul class="page-header__list">
           <li class="page-header__item">
             <a>
-              <img class="page-header__logo-mobile" src="img/logo-mobile-img.svg" width="34" height="38" alt="Логотип сайта с изображением котика">
-            </a>
-            <a>
-              <img class="page-header__logo-tablet" src="img/logo-tablet-img.svg" width="174" height="52" alt="Логотип сайта с изображением котика">
-            </a>
-            <a>
-              <img class="page-header__logo-desktop" src="img/logo-desktop-img.svg" width="202" height="59" alt="Логотип сайта с изображением котика">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-img.svg" width="202" height="59">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-img.svg" width="174" height="52">
+                <img class="page-header__logo-mobile" src="img/logo-mobile-img.svg" width="34" height="38" alt="Логотип сайта с изображением котика">
+              </picture>
             </a>
           </li>
           <li class="page-header__item">

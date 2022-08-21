@@ -88,8 +88,33 @@
 }
 
 @media (min-width: @tablet) {
+  .example {
+    background-color: @tertiary-color-text;
+  }
   .example__wrapper {
     .wrapper-tablet();
+  }
+  .example__caption {
+    .h1-captions-tablet();
+    padding-bottom: 63px;
+  }
+  .example__item:not(:last-child) {
+    margin-right: 42px;
+  }
+  .example__text {
+    width: 708px;
+    .main-text-tablet();
+    padding-bottom: 0;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example {
+    background-color: @example-bg-color;
+  }
+  .example__wrapper {
+    .wrapper-desktop();
   }
   .example__caption {
     .h1-captions-tablet();
