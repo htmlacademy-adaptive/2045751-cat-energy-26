@@ -55,12 +55,12 @@
     <main class="program-main">
       <h1 class="program-main__caption">Подбор программы</h1>
       <form class="form" action="#" method="post">
-        <div class="form__wrapper">
-          <p class="form__slogan">
-            Заполните анкету, и мы подберем<br>
-            программу питания для вашего кота
-          </p>
-          <section class="form__options">
+        <p class="form__slogan">
+          Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота
+        </p>
+        <section class="form__options">
+          <div class="form__wrapper form__wrapper-options">
             <h2 class="visually-hidden">Характеристики кота</h2>
             <div class="form__options-inputs">
               <label class="form__options-label" for="form__options-name">имя:<sup>*</sup></label>
@@ -74,26 +74,29 @@
               <label class="form__options-label" for="form__options-age">возраст:</label>
               <input id="form__options-age" class="form__options-input form__input-age" name="age" type="number" value="7">
             </div>
-          </section>
+          </div>
+          <div class="form__tasks">
+            <div class="form__wrapper form__wrapper-tasks">
+              <h2 class="visually-hidden">Выбор цели</h2>
+              <label class="form__tasks-label">
+                <input class="form__tasks-input" name="task" type="radio" value="weight-loss" checked>
+                похудение
+              </label>
+              <label class="form__tasks-label">
+                <input class="form__tasks-input" name="task" type="radio" value="weight-gain">
+                набор массы
+              </label>
+              <label class="form__tasks-label">
+                <input class="form__tasks-input" name="task" type="radio" value="need-advice">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </div>
+          </div>
+        </section>
 
-          <section class="form__tasks">
-            <h2 class="visually-hidden">Выбор цели</h2>
-            <label class="form__tasks-label">
-              <input class="form__tasks-input" name="task" type="radio" value="weight-loss" checked>
-              похудение
-            </label>
-            <label class="form__tasks-label">
-              <input class="form__tasks-input" name="task" type="radio" value="weight-gain">
-              набор массы
-            </label>
-            <label class="form__tasks-label">
-              <input class="form__tasks-input" name="task" type="radio" value="need-advice">
-              Не знаю (Нужен ваш совет)
-            </label>
-          </section>
-
-          <section class="form__contacts">
-            <h2 class="form__contacts-title">Контактные данные<br>(владельца кота)</h2>
+        <section class="form__contacts">
+          <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
+          <div class="form__wrapper form__wrapper-contacts">
             <div class="form__contacts-inputs">
               <label class="form__contacts-label" for="form__contacts-email">e-mail:<sup>*</sup></label>
               <input id="form__contacts-email" class="form__contacts-input form__input-email" name="email" type="email" value="kuklachev@gmail.com" required>
@@ -102,16 +105,20 @@
               <label class="form__contacts-label" for="form__contacts-phone">телефон:<sup>*</sup></label>
               <input id="form__contacts-phone" class="form__contacts-input form__input-phone" name="phone" type="text" value="8 (960) 900-60-90" required>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section class="form__comment">
-            <h2 class="visually-hidden">Раздел комментарий</h2>
+        <section class="form__comment">
+          <h2 class="visually-hidden">Раздел комментарий</h2>
+          <div class="form__wrapper">
             <label class="form__comment-label" for="form__comment">Комментарий</label>
             <textarea id="form__comment" class="form__comment-text" name="form__comment-text" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
-          </section>
+          </div>
+        </section>
 
-          <section class="form__extra">
-            <h2 class="form__extra-title">Дополнительно</h2>
+        <section class="form__extra">
+          <h2 class="form__extra-title">Дополнительно</h2>
+          <div class="form__wrapper form__wrapper-extra">
             <label class="form__extra-label">
               <input class="form__extra-input" name="sugar-substitute" type="checkbox" checked>
               сахарозаменитель
@@ -128,19 +135,21 @@
               <input class="form__extra-input" name="vitamins" type="checkbox">
               витамины
             </label>
-            <button class="form__button-send" type="submit">
-              отправить заявку
-            </button>
-          </section>
-          <p class="form__info">
-            * — Обязательные поля
-          </p>
-        </div>
+            <div class="form__button">
+              <button class="form__button-send" type="submit">
+                отправить заявку
+              </button>
+              <p class="form__info">
+                * — Обязательные поля
+              </p>
+            </div>
+          </div>
+        </section>
       </form>
 
       <section class="contacts">
+        <h2 class="visually-hidden">Адрес интернет-магазина</h2>
         <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Адрес интернет-магазина</h2>
           <p class="contacts__slogan">
             приглашаем к сотрудничеству дилеров!
           </p>
@@ -149,14 +158,16 @@
             Конюшенная, д. 19/8<br>
             Санкт-Петербург
           </address>
-        </div>
+      </div>
       </section>
 
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
-        <div class="map__wrapper">
-          <img src="img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
-        </div>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop-img.png" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="img/map-tablet-img.png" width="768" height="400">
+          <img class="map__mobile-img" src="img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
+        </picture>
       </section>
     </main>
 

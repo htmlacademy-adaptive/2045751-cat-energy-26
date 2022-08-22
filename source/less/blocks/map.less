@@ -8,11 +8,17 @@
 }
 
 .map__wrapper {
-  .wrapper;
+  .wrapper();
 }
 
 .map__mobile-img {
   display: block;
   margin: 0 auto;
+}
+
+@media(min-width: @tablet) {
+  .map__wrapper {
+    .wrapper-tablet();
+  }
 }
 
