@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header__form">
       <div class="page-header__wrapper">
         <ul class="page-header__list">
           <li class="page-header__item">
@@ -33,17 +33,17 @@
         <nav class="nav nav--active">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-item__link" href="index.html">
+              <a class="nav-item__link nav-item__link-form" href="index.html">
                 Главная
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-item__link" href="catalog.html">
+              <a class="nav-item__link nav-item__link-form" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-item__link nav-item__link--active" href="#">
+              <a class="nav-item__link nav-item__link-form nav-item__link--active-form" href="#">
                 Подбор программы
               </a>
             </li>
@@ -59,25 +59,24 @@
           Заполните анкету, и мы подберем<br>
           программу питания для вашего кота
         </p>
-        <section class="form__options">
-          <div class="form__wrapper form__wrapper-options">
-            <h2 class="visually-hidden">Характеристики кота</h2>
-            <div class="form__options-inputs">
-              <label class="form__options-label" for="form__options-name">имя:<sup>*</sup></label>
-              <input id="form__options-name" class="form__options-input form__input-name" name="name" type="text" value="Барсик" required>
+        <section class="form__original">
+          <div class="form__wrapper form__wrapper-original">
+            <div class="form__options">
+              <h2 class="visually-hidden">Характеристики кота</h2>
+              <div class="form__options-inputs">
+                <label class="form__options-label" for="form__options-name">имя:<sup>*</sup></label>
+                <input id="form__options-name" class="form__options-input form__input-name" name="name" type="text" value="Барсик" required>
+              </div>
+              <div class="form__options-inputs">
+                <label class="form__options-label" for="form__options-weight">вес(кг):<sup>*</sup></label>
+                <input id="form__options-weight" class="form__options-input form__input-weight" name="weight" type="number" value="7" required>
+              </div>
+              <div class="form__options-inputs">
+                <label class="form__options-label" for="form__options-age">возраст:</label>
+                <input id="form__options-age" class="form__options-input form__input-age" name="age" type="number" value="7">
+              </div>
             </div>
-            <div class="form__options-inputs">
-              <label class="form__options-label" for="form__options-weight">вес(кг):<sup>*</sup></label>
-              <input id="form__options-weight" class="form__options-input form__input-weight" name="weight" type="number" value="7" required>
-            </div>
-            <div class="form__options-inputs">
-              <label class="form__options-label" for="form__options-age">возраст:</label>
-              <input id="form__options-age" class="form__options-input form__input-age" name="age" type="number" value="7">
-            </div>
-          </div>
-          <div class="form__tasks">
-            <div class="form__wrapper form__wrapper-tasks">
-              <h2 class="visually-hidden">Выбор цели</h2>
+            <div class="form__tasks">
               <label class="form__tasks-label">
                 <input class="form__tasks-input" name="task" type="radio" value="weight-loss" checked>
                 похудение
@@ -118,23 +117,25 @@
 
         <section class="form__extra">
           <h2 class="form__extra-title">Дополнительно</h2>
-          <div class="form__wrapper form__wrapper-extra">
-            <label class="form__extra-label">
-              <input class="form__extra-input" name="sugar-substitute" type="checkbox" checked>
-              сахарозаменитель
-            </label>
-            <label class="form__extra-label">
-              <input class="form__extra-input" name="drinking-water" type="checkbox">
-              питьевая вода
-            </label>
-            <label class="form__extra-label">
-              <input class="form__extra-input" name="milk" type="checkbox">
-              молоко
-            </label>
-            <label class="form__extra-label">
-              <input class="form__extra-input" name="vitamins" type="checkbox">
-              витамины
-            </label>
+          <div class="form__wrapper">
+            <div class="form__extra-checkbox">
+              <label class="form__extra-label">
+                <input class="form__extra-input" name="sugar-substitute" type="checkbox" checked>
+                сахарозаменитель
+              </label>
+              <label class="form__extra-label">
+                <input class="form__extra-input" name="drinking-water" type="checkbox">
+                питьевая вода
+              </label>
+              <label class="form__extra-label">
+                <input class="form__extra-input" name="milk" type="checkbox">
+                молоко
+              </label>
+              <label class="form__extra-label">
+                <input class="form__extra-input" name="vitamins" type="checkbox">
+                витамины
+              </label>
+            </div>
             <div class="form__button">
               <button class="form__button-send" type="submit">
                 отправить заявку
