@@ -13,13 +13,11 @@
         <ul class="page-header__list">
           <li class="page-header__item">
             <a>
-              <img class="page-header__logo-mobile" src="img/logo-mobile-img.svg" width="34" height="38" alt="Логотип сайта с изображением котика">
-            </a>
-            <a>
-              <img class="page-header__logo-tablet" src="img/logo-tablet-img.svg" width="174" height="52" alt="Логотип сайта с изображением котика">
-            </a>
-            <a>
-              <img class="page-header__logo-desktop" src="img/logo-desktop-img.svg" width="202" height="59" alt="Логотип сайта с изображением котика">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-img.svg" width="202" height="59">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-img.svg" width="174" height="52">
+                <img class="page-header__logo-mobile" src="img/logo-mobile-img.svg" width="34" height="38" alt="Логотип сайта с изображением котика">
+              </picture>
             </a>
           </li>
           <li class="page-header__item">
@@ -67,8 +65,11 @@
             </p>
           </div>
           <div class="promo__poster">
-            <img class="promo__poster-img promo__poster-mobile" src="img/promo-img.png" width="280" height="270" alt="Большая банка с питанием для котов кэт-энерджи желто-оранжевого цвета">
-            <img class="promo__poster-img promo__poster-tablet" src="img/promo-tablet-img.png" width="709" height="609" alt="Большая банка с питанием для котов кэт-энерджи желто-оранжевого цвета">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/promo-desktop-img.png" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/promo-tablet-img.png" width="709" height="609">
+              <img class="promo__poster-img promo__poster-mobile" src="img/promo-mobile-img.png" width="280" height="270" alt="Большая банка с питанием для котов кэт-энерджи желто-оранжевого цвета">
+            </picture>
             <a class="promo__poster-link" href="#">
               подобрать программу
             </a>
@@ -97,10 +98,10 @@
             <li class="diet__item diet__item-mass">
               <p class="diet__item-title">набор массы</p>
               <p class="diet__item-description">
-                Заработать авторитет среди<br>
-                дворовых котов и даже собак?<br>
-                Серия Cat Energy Pro поможет<br>
-                вашему коту нарастить<br>
+                Заработать авторитет среди
+                дворовых котов и даже собак?
+                Серия Cat Energy Pro поможет
+                вашему коту нарастить
                 необходимые мышцы!
               </p>
               <a class="diet__link" href="#">
@@ -204,10 +205,11 @@
 
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
-        <img class="map__mobile-img" src="img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
-        <img class="map__tablet-img" src="img/map-tablet-img.png" width="768" height="400" alt="интренет магазин на карте">
-        <div class="map__wrapper">
-        </div>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop-img.png" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="img/map-tablet-img.png" width="768" height="400">
+          <img class="map__mobile-img" src="img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
+        </picture>
       </section>
     </main>
 
