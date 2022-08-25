@@ -6,14 +6,30 @@
 
 .contacts__wrapper {
   .wrapper();
+  display: flex;
 }
 
 .contacts__slogan {
   margin: 0;
+  width: 139px;
+  margin-right: auto;
   .slogan();
   color: @fifth-color-text;
 }
 
 .contacts__address {
+  width: 139px;
   .contacts-address;
+}
+
+@media(min-width: @tablet) {
+  .contacts__wrapper {
+    .wrapper-tablet();
+  }
+  .contacts__slogan {
+    padding-left: 40px;
+  }
+  .contacts__address {
+    padding-right: 40px;
+  }
 }

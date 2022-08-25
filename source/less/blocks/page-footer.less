@@ -4,9 +4,50 @@
 @import "../mixins.less";
 
 .page-footer {
+  padding-top: 39px;
   background-color: @footer-bg-color;
 }
 
 .page-footer__wrapper {
   .wrapper();
+}
+
+.page-footer__logo {
+  margin-bottom: 52px;
+  margin-right: auto;
+}
+
+.page-footer__logo-img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media(min-width: @tablet) {
+  .page-footer {
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
+  .page-footer__wrapper {
+    .wrapper-tablet();
+    display: flex;
+    align-items: center;
+  }
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
+}
+
+@media(min-width: @desktop) {
+  .page-footer {
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
+  .page-footer__wrapper {
+    .wrapper-desktop();
+    display: flex;
+    align-items: center;
+  }
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
 }

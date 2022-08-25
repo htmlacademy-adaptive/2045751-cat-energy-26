@@ -52,3 +52,41 @@
 .catalog__item-link {
   .button-order();
 }
+
+@media(min-width: @tablet) {
+  .catalog__wrapper {
+    .wrapper-tablet();
+  }
+  .catalog__list {
+    grid-template-columns: repeat(auto-fill, 324px);
+  }
+  .catalog__item-link {
+    .button-order-tablet();
+  }
+}
+
+@media(min-width: @desktop) {
+  .page-header__catalog {
+    &::before {
+      display: none;
+    }
+  }
+  .nav-item__link-catalog{
+    color: @secondary-color-text;
+  }
+  .nav-item__link--active-catalog {
+    &::before {
+      background-color: @nav-link-active;
+    }
+  }
+  .catalog__wrapper {
+    .wrapper-desktop();
+  }
+  .catalog__list {
+    grid-template-columns: repeat(auto-fill, 245px);
+    column-gap: 80px;
+  }
+  .catalog__item-link {
+    .button-order-tablet();
+  }
+}

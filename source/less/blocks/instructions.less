@@ -4,7 +4,7 @@
 @import "../mixins.less";
 
 .instructions__wrapper {
-  .wrapper;
+  .wrapper();
 }
 
 .instructions__caption {
@@ -15,19 +15,101 @@
   font-size: 36px;
   line-height: 40px;
   color: @secondary-color-text;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .instructions__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
+}
+
+.instructions__item {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.instructions__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.instructions__item-img {
+  display: block;
+  margin-right: 20px;
 }
 
 .instructions__item-text {
   margin: 0;
-  .main-text;
+  width: 199px;
+  .main-text();
 }
 
-.instructions__item img {
-  display: block;
+@media(min-width: @tablet) {
+  .instructions__wrapper {
+    .wrapper-tablet();
+  }
+  .instructions__caption {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 45px;
+    padding-bottom: 32px;
+  }
+  .instructions__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 245px);
+    column-gap: 153px;
+  }
+  .instructions__item {
+    flex-direction: column;
+    align-items: start;
+    padding-top: 40px;
+    padding-bottom: 57px;
+  }
+  .instructions__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .instructions__item:not(:nth-child(2n)) {
+    margin-right: 153px;
+  }
+  .instructions__item-img {
+    margin-bottom: 31px;
+  }
+  .instructions__item-text {
+    width: 250px;
+    .main-text-tablet();
+  }
+}
+
+@media(min-width: @desktop) {
+  .instructions__wrapper {
+    .wrapper-desktop();
+  }
+  .instructions__caption {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 71px;
+    padding-bottom: 32px;
+  }
+  .instructions__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 245px);
+    column-gap: 80px;
+  }
+  .instructions__item {
+    flex-direction: column;
+    align-items: start;
+    padding-top: 40px;
+    padding-bottom: 57px;
+  }
+  .instructions__item-img {
+    margin-bottom: 31px;
+  }
+  .instructions__item-text {
+    width: 250px;
+    .main-text-tablet();
+  }
 }
