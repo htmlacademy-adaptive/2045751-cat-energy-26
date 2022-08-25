@@ -5,7 +5,7 @@
 
 .page-header {
   padding-top: 10px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
 }
 
 .page-header__wrapper {
@@ -19,8 +19,15 @@
   min-height: 38px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+}
+
+.page-header__item-logo {
+  margin-right: 56px;
+}
+
+.page-header__item-name {
+  margin-right: 65px;
 }
 
 .page-header__logo-mobile,
@@ -29,16 +36,32 @@
 }
 
 .page-header__item-burger {
-  display: flex;
-  width: 24px;
-  height: 18px;
+  margin-right: -21px;
 }
 
 .page-header__btn {
-  width: 100%;
+  display: flex;
+  width: 24px;
+  height: 18px;
   border: 0;
   background-color: #ffffff;
   background-image: url("@{img-address}page-header-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.page-header__item-close {
+  margin-left: 5px;
+}
+
+.page-header__btn-close {
+  display: flex;
+  width: 18px;
+  height: 20px;
+  border: 0;
+  background-color: #ffffff;
+  background-image: url("@{img-address}page-header-close.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -53,7 +76,7 @@
     min-height: 54px;
     display: flex;
   }
-  .page-header__btn {
+  .page-header__item-burger {
     display: none;
   }
   .page-header__list {
