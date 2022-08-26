@@ -14,11 +14,11 @@
 }
 
 .diet__item {
-  position: relative;
   background-color: @diet-bg-color;
   padding-top: 30px;
   padding-bottom: 22px;
   padding-left: 20px;
+  padding-right: 33px;
 }
 
 .diet__item:not(:nth-child(2n)) {
@@ -26,7 +26,6 @@
 }
 
 .diet__item-title {
-  width: 137px;
   margin: 0;
   font-family: 'Oswald', sans-serif;
   font-style: normal;
@@ -53,7 +52,6 @@
 
 .diet__item-description {
   margin: 0;
-  width: 227px;
   .main-text();
   padding-bottom: 23px;
 }
@@ -88,13 +86,14 @@
   }
   .diet__item {
     padding-top: 77px;
-    padding-right: 33px;
+    padding-right: 62px;
     padding-bottom: 53px;
     padding-left: 52px;
   }
   .diet__item-title {
     margin-left: 0;
     padding-bottom: 24px;
+    padding-left: 0;
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
@@ -102,10 +101,29 @@
   .diet__item-description {
     width: 340px;
     .main-text-tablet();
-    padding-bottom: 48px;
+    padding-bottom: 22px;
   }
   .diet__item:not(:nth-child(2n)) {
     margin-bottom: 30px;
+  }
+  .diet__link {
+    .diet-link-tablet();
+    border-top: 0;
+    &::after {
+      left: 21%;
+      bottom: 8px;
+    }
+  }
+  .diet__item-slim {
+    background-image: url("@{img-address}/diet-tablet-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+  }
+
+  .diet__item-mass {
+    background-image: url("@{img-address}/diet-tablet-mass.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
   }
 }
 

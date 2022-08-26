@@ -1,3 +1,11 @@
+.diet-link-tablet {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 .button-order {
   display: block;
   width: 100%;
@@ -84,143 +92,126 @@
   line-height: 36px;
   color: #000000;
 }
-.diet__wrapper {
+.instructions {
+  padding-top: 20px;
+  padding-bottom: 49px;
+}
+.instructions__wrapper {
   width: 280px;
   margin: 0 auto;
 }
-.diet__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.diet__item {
-  position: relative;
-  background-color: #F2F2F2;
-  padding-top: 30px;
-  padding-bottom: 22px;
-  padding-left: 20px;
-}
-.diet__item:not(:nth-child(2n)) {
-  margin-bottom: 20px;
-}
-.diet__item-title {
-  width: 137px;
+.instructions__caption {
   margin: 0;
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  padding-bottom: 30px;
-  padding-left: 75px;
+  font-size: 36px;
+  line-height: 40px;
   color: #000000;
+  padding-bottom: 40px;
 }
-.diet__item-slim {
-  background-image: url("../img//diet-slim.svg");
-  background-repeat: no-repeat;
-  background-position: 22px 21px;
-}
-.diet__item-mass {
-  background-image: url("../img//diet-mass.svg");
-  background-repeat: no-repeat;
-  background-position: 13px 24px;
-}
-.diet__item-description {
+.instructions__list {
   margin: 0;
-  width: 227px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+.instructions__item {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.instructions__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.instructions__item-img {
+  display: block;
+  margin-right: 20px;
+}
+.instructions__item-text {
+  margin: 0;
+  width: 199px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  padding-bottom: 23px;
-}
-.diet__link {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #000000;
-  padding-top: 19px;
-  border-top: 1px solid #D9D9D9;
-}
-.diet__link::after {
-  content: "";
-  width: 24px;
-  height: 12px;
-  position: absolute;
-  background-image: url("../img//diet-link-arrow.svg");
-  left: 40%;
-  bottom: 2px;
 }
 @media (min-width: 768px) {
-  .diet__wrapper {
+  .instructions {
+    padding-top: 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E6E6E6;
+  }
+  .instructions__wrapper {
     width: 708px;
   }
-  .diet__item {
-    padding-top: 77px;
-    padding-right: 33px;
-    padding-bottom: 53px;
-    padding-left: 52px;
+  .instructions__caption {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 45px;
+    padding-bottom: 32px;
   }
-  .diet__item-title {
-    margin-left: 0;
-    padding-bottom: 24px;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
+  .instructions__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 245px);
+    column-gap: 153px;
   }
-  .diet__item-description {
-    width: 340px;
+  .instructions__item {
+    flex-direction: column;
+    align-items: start;
+    padding-top: 40px;
+    padding-bottom: 57px;
+  }
+  .instructions__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .instructions__item:not(:nth-child(2n)) {
+    margin-right: 153px;
+  }
+  .instructions__item-img {
+    margin-bottom: 31px;
+  }
+  .instructions__item-text {
+    width: 250px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    padding-bottom: 48px;
-  }
-  .diet__item:not(:nth-child(2n)) {
-    margin-bottom: 30px;
   }
 }
 @media (min-width: 1440px) {
-  .diet__wrapper {
+  .instructions__wrapper {
     width: 1220px;
   }
-  .diet__list {
+  .instructions__caption {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 71px;
+    padding-bottom: 32px;
+  }
+  .instructions__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 570px);
+    grid-template-columns: repeat(auto-fill, 245px);
     column-gap: 80px;
   }
-  .diet__item {
-    padding-top: 77px;
-    padding-right: 51px;
-    padding-bottom: 59px;
-    padding-left: 52px;
+  .instructions__item {
+    flex-direction: column;
+    align-items: start;
+    padding-top: 40px;
+    padding-bottom: 57px;
   }
-  .diet__item:not(:nth-child(2n)) {
-    margin-bottom: 0;
+  .instructions__item-img {
+    margin-bottom: 31px;
   }
-  .diet__item-title {
-    text-align: center;
-    padding-bottom: 73px;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-  }
-  .diet__item-description {
-    width: 467px;
+  .instructions__item-text {
+    width: 250px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    padding-bottom: 23px;
   }
 }

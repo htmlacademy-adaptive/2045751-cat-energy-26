@@ -84,11 +84,16 @@
 @media (min-width: @tablet) {
   .page-header {
     padding-top: 24px;
+    padding-bottom: 0;
+    &::after {
+      display: none;
+    }
   }
   .page-header__wrapper {
     .wrapper-tablet();
     min-height: 54px;
     display: flex;
+    padding-bottom: 0;
   }
   .page-header__item-burger {
     display: none;

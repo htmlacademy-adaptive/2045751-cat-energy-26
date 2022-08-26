@@ -67,20 +67,18 @@
 }
 
 @media (min-width: @tablet) {
+  .promo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .promo__wrapper {
     .wrapper-tablet();
   }
-  .promo {
-    background-image: none;
-    &::before {
-      display: none;
-    }
-  }
   .promo__text {
     width: 414px;
+    margin-left: 86px;
     text-align: left;
-    transform: none;
-    left: 15%;
+    padding-top: 30px;
   }
   .promo__caption {
     .h1-captions-tablet();
@@ -100,10 +98,10 @@
     top: 20px;
   }
   .promo__poster-link {
-    width: 244px;
     position: absolute;
-    left: 83px;
-    top: 50px;
+    width: 244px;
+    bottom: -85px;
+    left: 15%;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
