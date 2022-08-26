@@ -88,9 +88,18 @@
   padding-top: 10px;
   padding-bottom: 17px;
 }
+.page-header--promo::after {
+  content: "";
+  width: 100%;
+  min-height: 302px;
+  position: absolute;
+  left: 0;
+  background-image: url("../img/promo-cat-img.png");
+}
 .page-header__wrapper {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 17px;
 }
 .page-header__list {
   margin: 0;
