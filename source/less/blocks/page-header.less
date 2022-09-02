@@ -110,6 +110,20 @@
   .page-header {
     padding-top: 53px;
   }
+  .page-header--promo {
+    position: relative;
+    &::after{
+      display: block;
+      width: 720px;
+      min-height: 694px;
+      background-image: url("@{img-address}/promo-desktop-cat-img.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      left : auto;
+      right: 0;
+      top: 0;
+    }
+  }
   .page-header__wrapper {
     .wrapper-desktop();
     min-height: 59px;
