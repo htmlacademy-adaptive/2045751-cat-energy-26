@@ -95,7 +95,7 @@
     margin: 0;
     order: 1;
     z-index: -1;
-    margin-top: -106px;
+    margin-top: -78px;
   }
   .promo__poster-link {
     width: 244px;
@@ -112,12 +112,19 @@
 @media (min-width: @desktop) {
   .promo__wrapper {
     .wrapper-desktop();
+    height: 600px;
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
   .promo__text {
     margin-left: 83px;
     margin-right: -50px;
     padding-top: 100px;
+  }
+  .promo__poster {
+    z-index: 0;
+    margin-top: 0px;
   }
   .promo__poster-link {
     left: 190px;

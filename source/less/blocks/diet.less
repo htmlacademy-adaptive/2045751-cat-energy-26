@@ -153,9 +153,32 @@
     font-size: 36px;
     line-height: 36px;
   }
+  .diet__item-title-slim {
+    padding-left: 62px;
+  }
+  .diet__item-title-mass {
+    padding-left: 47px;
+  }
   .diet__item-description {
     width: 467px;
     .main-text-tablet();
     padding-bottom: 23px;
+  }
+  .diet__item-slim {
+    background-image: url("@{img-address}/diet-desktop-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 52px 41px;
+  }
+
+  .diet__item-mass {
+    background-image: url("@{img-address}/diet-desktop-mass.svg");
+    background-repeat: no-repeat;
+    background-position: 33px 47px;
+  }
+  .diet__link {
+    &::after {
+      left: 28%;
+      bottom: 8px;
+    }
   }
 }
