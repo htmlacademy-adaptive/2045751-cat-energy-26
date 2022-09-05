@@ -3,24 +3,9 @@
 @import "../vars.less";
 @import "../mixins.less";
 
-
 .promo {
-  position: relative;
-  min-height: 302px;
-  margin-bottom: 190px;
-  background-image: url("@{img-address}promo-cat-img.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  text-align: center;
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    background-color: @promo-bg-color;
-  }
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .promo__wrapper {
@@ -28,20 +13,15 @@
 }
 
 .promo__text {
-  position: absolute;
   width: 250px;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 0);
+  margin: 0 auto;
   text-align: center;
 }
 
 .promo__caption {
   margin: 0;
-  padding-top: 27px;
   padding-bottom: 25px;
   position: relative;
-  z-index: 1;
   .h1-captions;
   color: @tertiary-color-text;
 }
@@ -49,7 +29,6 @@
 .promo__slogan {
   margin: 0;
   position: relative;
-  z-index: 1;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
@@ -60,9 +39,7 @@
 }
 
 .promo__poster {
-  position: relative;
   .wrapper();
-  top: 137px;
 }
 
 .promo__poster-img {
@@ -72,7 +49,6 @@
 }
 
 .promo__poster-link {
-  position: absolute;
   display: block;
   width: 100%;
   background-color: #68B738;
@@ -83,26 +59,27 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   color: @tertiary-color-text;
   padding-top: 7px;
   padding-bottom: 7px;
 }
 
 @media (min-width: @tablet) {
+  .promo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .promo__wrapper {
     .wrapper-tablet();
-  }
-  .promo {
-    background-image: none;
-    &::before {
-      display: none;
-    }
+    display: flex;
+    flex-direction: column;
   }
   .promo__text {
     width: 414px;
+    margin-left: 86px;
+    padding-top: 30px;
     text-align: left;
-    transform: none;
-    left: 15%;
   }
   .promo__caption {
     .h1-captions-tablet();
@@ -116,49 +93,38 @@
   }
   .promo__poster {
     margin: 0;
-    top: 210px;
-  }
-  .promo__poster-img {
-    top: 20px;
+    order: 1;
+    z-index: -1;
+    margin-top: -110px;
   }
   .promo__poster-link {
     width: 244px;
-    position: absolute;
-    left: 83px;
-    top: 50px;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     padding-top: 17px;
     padding-bottom: 17px;
+    margin-left: 86px;
+    margin-top: 49px;
   }
 }
 
 @media (min-width: @desktop) {
-  .page-header {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 720px;
-      height: 694px;
-      background-color: @promo-bg-color;
-      right: 0;
-      top: 0;
-    }
-  }
   .promo__wrapper {
     .wrapper-desktop();
+    height: 600px;
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
   .promo__text {
-    position: static;
     margin-left: 83px;
+    margin-right: -50px;
+    padding-top: 100px;
   }
   .promo__poster {
-    position: static;
-  }
-  .promo__poster-img {
-    right: 50px;
+    z-index: 0;
+    margin-top: 0px;
   }
   .promo__poster-link {
     left: 190px;

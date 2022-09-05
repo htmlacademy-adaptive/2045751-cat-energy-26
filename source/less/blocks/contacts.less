@@ -3,6 +3,11 @@
 @import "../vars.less";
 @import "../mixins.less";
 
+.contacts {
+  background-color: #F2F2F2;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
 
 .contacts__wrapper {
   .wrapper();
@@ -23,13 +28,51 @@
 }
 
 @media(min-width: @tablet) {
+  .contacts {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
   .contacts__wrapper {
     .wrapper-tablet();
   }
   .contacts__slogan {
     padding-left: 40px;
+    .slogan-tablet();
   }
   .contacts__address {
+    width: 160px;
     padding-right: 40px;
+    .contacts-address-tablet();
+    text-align: right;
+  }
+  .contacts__address-city {
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+@media(min-width: @desktop) {
+  .contacts {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .contacts__wrapper {
+    width: 565px;
+    background-color: #ffffff;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    z-index: 1;
+  }
+  .contacts__slogan {
+    padding-left: 80px;
+  }
+  .contacts__address {
+    width: 155px;
+    padding-right: 80px;
+    text-align: left;
   }
 }

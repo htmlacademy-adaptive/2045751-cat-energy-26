@@ -4,6 +4,16 @@
 @import "../mixins.less";
 
 .nav {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: @nav-mobile-bg-color;
+  left: 0;
+  top: 65px;
+  z-index: 1;
+}
+
+.nav--active {
   display: block;
 }
 
@@ -11,6 +21,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  border-top: 1px solid #E6E6E6;
+  padding-top: 22px;
+  padding-bottom: 24px;
 }
 
 .nav-item__link {
@@ -20,7 +37,9 @@
 
 @media (min-width: @tablet) {
   .nav {
-    align-self: end;
+    display: block;
+    width: 442px;
+    position: static;
   }
   .nav-list {
     width: 440px;
@@ -29,6 +48,7 @@
   }
   .nav-item {
     min-height: 36px;
+    border-top: none;
   }
   .nav-item:not(:last-child) {
     padding-right: 35px;
@@ -75,6 +95,10 @@
 }
 
 @media (min-width: @desktop) {
+  .nav {
+    display: block;
+    background-color: transparent;
+  }
   .nav-item__link {
     font-weight: 400;
     font-size: 20px;

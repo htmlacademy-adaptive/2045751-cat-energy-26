@@ -4,11 +4,26 @@
 @import "../mixins.less";
 
 .map {
+  position: relative;
   text-align: center;
 }
 
 .map__mobile-img {
   display: block;
   margin: 0 auto;
+}
+
+.map__pin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media(min-width: @desktop) {
+  .map__pin {
+    left: 67%;
+    top: 45%;
+  }
 }
 

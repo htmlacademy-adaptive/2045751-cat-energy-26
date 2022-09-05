@@ -14,12 +14,11 @@
 }
 
 .diet__item {
-  position: relative;
   background-color: @diet-bg-color;
   padding-top: 30px;
-  padding-right: 33px;
   padding-bottom: 22px;
   padding-left: 20px;
+  padding-right: 33px;
 }
 
 .diet__item:not(:nth-child(2n)) {
@@ -28,7 +27,6 @@
 
 .diet__item-title {
   margin: 0;
-  margin-left: 75px;
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -36,17 +34,30 @@
   line-height: 37px;
   text-transform: uppercase;
   padding-bottom: 30px;
+  padding-left: 75px;
   color: @secondary-color-text;
+}
+
+.diet__item-slim {
+  background-image: url("@{img-address}/diet-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
+}
+
+.diet__item-mass {
+  background-image: url("@{img-address}/diet-mass.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
 }
 
 .diet__item-description {
   margin: 0;
-  width: 227px;
   .main-text();
-  padding-bottom: 38px;
+  padding-bottom: 23px;
 }
 
 .diet__link {
+  position: relative;
   display: block;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
@@ -56,6 +67,17 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @secondary-color-text;
+  padding-top: 19px;
+  border-top: 1px solid #D9D9D9;
+  &::after {
+    content: "";
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    background-image: url("@{img-address}/diet-link-arrow.svg");
+    left: 40%;
+    bottom: 2px;
+  }
 }
 
 @media (min-width: @tablet) {
@@ -64,13 +86,14 @@
   }
   .diet__item {
     padding-top: 77px;
-    padding-right: 33px;
+    padding-right: 62px;
     padding-bottom: 53px;
     padding-left: 52px;
   }
   .diet__item-title {
     margin-left: 0;
     padding-bottom: 24px;
+    padding-left: 0;
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
@@ -78,10 +101,29 @@
   .diet__item-description {
     width: 340px;
     .main-text-tablet();
-    padding-bottom: 48px;
+    padding-bottom: 22px;
   }
   .diet__item:not(:nth-child(2n)) {
     margin-bottom: 30px;
+  }
+  .diet__link {
+    .diet-link-tablet();
+    border-top: 0;
+    &::after {
+      left: 21%;
+      bottom: 8px;
+    }
+  }
+  .diet__item-slim {
+    background-image: url("@{img-address}/diet-tablet-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+  }
+
+  .diet__item-mass {
+    background-image: url("@{img-address}/diet-tablet-mass.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
   }
 }
 
@@ -100,6 +142,7 @@
     padding-bottom: 59px;
     padding-left: 52px;
   }
+
   .diet__item:not(:nth-child(2n)) {
     margin-bottom: 0;
   }
@@ -110,9 +153,32 @@
     font-size: 36px;
     line-height: 36px;
   }
+  .diet__item-title-slim {
+    padding-left: 62px;
+  }
+  .diet__item-title-mass {
+    padding-left: 47px;
+  }
   .diet__item-description {
     width: 467px;
     .main-text-tablet();
     padding-bottom: 23px;
+  }
+  .diet__item-slim {
+    background-image: url("@{img-address}/diet-desktop-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 52px 41px;
+  }
+
+  .diet__item-mass {
+    background-image: url("@{img-address}/diet-desktop-mass.svg");
+    background-repeat: no-repeat;
+    background-position: 33px 47px;
+  }
+  .diet__link {
+    &::after {
+      left: 28%;
+      bottom: 8px;
+    }
   }
 }

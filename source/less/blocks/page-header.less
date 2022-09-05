@@ -5,11 +5,26 @@
 
 .page-header {
   padding-top: 10px;
-  padding-bottom: 18px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.page-header--promo {
+  &::after {
+    content: "";
+    width: 100%;
+    min-height: 302px;
+    position: absolute;
+    left: 0;
+    background-color: #68B738;
+    background-image: url("@{img-address}promo-cat-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .page-header__wrapper {
-  .wrapper;
+  .wrapper();
+  padding-bottom: 17px;
 }
 
 .page-header__list {
@@ -19,8 +34,15 @@
   min-height: 38px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+}
+
+.page-header__item-logo {
+  margin-right: 56px;
+}
+
+.page-header__item-name {
+  margin-right: 65px;
 }
 
 .page-header__logo-mobile,
@@ -29,13 +51,13 @@
 }
 
 .page-header__item-burger {
-  display: flex;
-  width: 24px;
-  height: 18px;
+  margin-right: -21px;
 }
 
 .page-header__btn {
-  width: 100%;
+  display: flex;
+  width: 24px;
+  height: 18px;
   border: 0;
   background-color: #ffffff;
   background-image: url("@{img-address}page-header-burger.svg");
@@ -44,16 +66,37 @@
   cursor: pointer;
 }
 
+.page-header__item-close {
+  margin-left: 5px;
+}
+
+.page-header__btn-close {
+  display: flex;
+  width: 18px;
+  height: 20px;
+  border: 0;
+  background-color: #ffffff;
+  background-image: url("@{img-address}page-header-close.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
 @media (min-width: @tablet) {
   .page-header {
     padding-top: 24px;
+    border-bottom: 0;
+    &::after {
+      display: none;
+    }
   }
   .page-header__wrapper {
     .wrapper-tablet();
     min-height: 54px;
     display: flex;
+    padding-bottom: 0;
   }
-  .page-header__btn {
+  .page-header__item-burger {
     display: none;
   }
   .page-header__list {
@@ -67,6 +110,20 @@
 @media (min-width: @desktop) {
   .page-header {
     padding-top: 53px;
+  }
+  .page-header--promo {
+    position: relative;
+    &::after{
+      display: block;
+      width: 720px;
+      min-height: 694px;
+      background-image: url("@{img-address}/promo-desktop-cat-img.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      left : auto;
+      right: 0;
+      top: 0;
+    }
   }
   .page-header__wrapper {
     .wrapper-desktop();
