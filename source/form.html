@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header__form">
+    <header class="page-header">
       <div class="page-header__wrapper">
         <ul class="page-header__list">
           <li class="page-header__item page-header__item-logo">
@@ -53,89 +53,115 @@
     </header>
 
     <main class="program-main">
-      <h1 class="program-main__caption">Подбор программы</h1>
       <form class="form" action="#" method="post">
-        <p class="form__slogan">
-          Заполните анкету, и мы подберем<br>
-          программу питания для вашего кота
-        </p>
+        <div class="form__wrapper">
+          <h1 class="form__caption">Подбор программы</h1>
+          <p class="form__slogan">
+            Заполните анкету, и мы подберем<br>
+            программу питания для вашего кота
+          </p>
+        </div>
         <section class="form__original">
-          <div class="form__wrapper form__wrapper-original">
-            <div class="form__options">
+          <div class="form__options">
+            <div class="form__wrapper">
               <h2 class="visually-hidden">Характеристики кота</h2>
-              <div class="form__options-inputs">
-                <label class="form__options-label" for="form__options-name">имя:<sup>*</sup></label>
-                <input id="form__options-name" class="form__options-input form__input-name" name="name" type="text" value="Барсик" required>
-              </div>
-              <div class="form__options-inputs">
-                <label class="form__options-label" for="form__options-weight">вес(кг):<sup>*</sup></label>
-                <input id="form__options-weight" class="form__options-input form__input-weight" name="weight" type="number" value="7" required>
-              </div>
-              <div class="form__options-inputs">
-                <label class="form__options-label" for="form__options-age">возраст:</label>
-                <input id="form__options-age" class="form__options-input form__input-age" name="age" type="number" value="7">
-              </div>
+              <ul class="form__options-list">
+                <li class="form__options-item">
+                  <label class="form__options-label" for="form__options-name">имя:<sup>*</sup></label>
+                  <input id="form__options-name" class="form__options-input form__input-name" name="name" type="text" value="Барсик" required>
+                </li>
+                <li class="form__options-item">
+                  <label class="form__options-label" for="form__options-weight">вес(кг):<sup>*</sup></label>
+                  <input id="form__options-weight" class="form__options-input form__input-weight" name="weight" type="number" value="7" required>
+                </li>
+                <li class="form__options-item">
+                  <label class="form__options-label" for="form__options-age">возраст:</label>
+                  <input id="form__options-age" class="form__options-input form__input-age" name="age" type="number" value="7">
+                </li>
+              </ul>
             </div>
-            <div class="form__tasks">
-              <label class="form__tasks-label">
-                <input class="form__tasks-input" name="task" type="radio" value="weight-loss" checked>
-                похудение
-              </label>
-              <label class="form__tasks-label">
-                <input class="form__tasks-input" name="task" type="radio" value="weight-gain">
-                набор массы
-              </label>
-              <label class="form__tasks-label">
-                <input class="form__tasks-input" name="task" type="radio" value="need-advice">
-                Не знаю (Нужен ваш совет)
-              </label>
+          </div>
+          <div class="form__tasks">
+            <div class="form__wrapper">
+              <ul class="form__tasks-list">
+                <li class="form__tasks-item">
+                  <label class="form__tasks-label">
+                    <input class="form__tasks-input" name="task" type="radio" value="weight-loss" checked>
+                    похудение
+                  </label>
+                </li>
+                <li class="form__tasks-item">
+                  <label class="form__tasks-label">
+                    <input class="form__tasks-input" name="task" type="radio" value="weight-gain">
+                    набор массы
+                  </label>
+                </li>
+                  <li class="form__tasks-item">
+                  <label class="form__tasks-label">
+                    <input class="form__tasks-input" name="task" type="radio" value="need-advice">
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
 
         <section class="form__contacts">
-          <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
-          <div class="form__wrapper form__wrapper-contacts">
-            <div class="form__contacts-inputs">
-              <label class="form__contacts-label" for="form__contacts-email">e-mail:<sup>*</sup></label>
-              <input id="form__contacts-email" class="form__contacts-input form__input-email" name="email" type="email" value="kuklachev@gmail.com" required>
-            </div>
-            <div class="form__contacts-inputs">
-              <label class="form__contacts-label" for="form__contacts-phone">телефон:<sup>*</sup></label>
-              <input id="form__contacts-phone" class="form__contacts-input form__input-phone" name="phone" type="text" value="8 (960) 900-60-90" required>
-            </div>
+          <div class="form__wrapper">
+            <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
+            <ul class="form__contacts-list">
+              <li class="form__contacts-item">
+                <label class="form__contacts-label" for="form__contacts-email">e-mail:<sup>*</sup></label>
+                <input id="form__contacts-email" class="form__contacts-input form__input-email" name="email" type="email" value="kuklachev@gmail.com" required>
+              </li>
+              <li class="form__contacts-item">
+                <label class="form__contacts-label" for="form__contacts-phone">телефон:<sup>*</sup></label>
+                <input id="form__contacts-phone" class="form__contacts-input form__input-phone" name="phone" type="text" value="8 (960) 900-60-90" required>
+              </li>
+            </ul>
           </div>
         </section>
 
         <section class="form__comment">
-          <h2 class="visually-hidden">Раздел комментарий</h2>
           <div class="form__wrapper">
-            <label class="form__comment-label" for="form__comment">Комментарий</label>
-            <textarea id="form__comment" class="form__comment-text" name="form__comment-text" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+            <h2 class="visually-hidden">Раздел комментарий</h2>
+              <div class="form__comment-area">
+                <label class="form__comment-label" for="form__comment">Комментарий</label>
+                <textarea id="form__comment" class="form__comment-text" name="form__comment-text" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
           </div>
         </section>
 
         <section class="form__extra">
-          <h2 class="form__extra-title">Дополнительно</h2>
           <div class="form__wrapper">
-            <div class="form__extra-checkbox">
-              <label class="form__extra-label">
-                <input class="form__extra-input" name="sugar-substitute" type="checkbox" checked>
-                сахарозаменитель
-              </label>
-              <label class="form__extra-label">
-                <input class="form__extra-input" name="drinking-water" type="checkbox">
-                питьевая вода
-              </label>
-              <label class="form__extra-label">
-                <input class="form__extra-input" name="milk" type="checkbox">
-                молоко
-              </label>
-              <label class="form__extra-label">
-                <input class="form__extra-input" name="vitamins" type="checkbox">
-                витамины
-              </label>
-            </div>
+            <h2 class="form__extra-title">Дополнительно</h2>
+            <ul class="form__extra-list">
+              <li class="form__extra-item">
+                <label class="form__extra-label">
+                  <input class="form__extra-input" name="sugar-substitute" type="checkbox" checked>
+                  сахарозаменитель
+                </label>
+              </li>
+              <li class="form__extra-item">
+                <label class="form__extra-label">
+                  <input class="form__extra-input" name="drinking-water" type="checkbox">
+                  питьевая вода
+                </label>
+              </li>
+              <li class="form__extra-item">
+                <label class="form__extra-label">
+                  <input class="form__extra-input" name="milk" type="checkbox">
+                  молоко
+                </label>
+              </li>
+              <li class="form__extra-item">
+                <label class="form__extra-label">
+                  <input class="form__extra-input" name="vitamins" type="checkbox">
+                  витамины
+                </label>
+              </li>
+            </ul>
             <div class="form__button">
               <button class="form__button-send" type="submit">
                 отправить заявку
@@ -169,6 +195,12 @@
           <source media="(min-width: 768px)" srcset="img/map-tablet-img.png" width="768" height="400">
           <img class="map__mobile-img" src="img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
         </picture>
+        <div class="map__pin">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/map-tablet-pin.svg" width="113" height="106">
+            <img class="map__mobile-img" src="img/map-pin.svg" width="57" height="53" alt="Указатель адреса на карте">
+          </picture>
+        </div>
       </section>
     </main>
 
