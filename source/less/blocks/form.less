@@ -93,14 +93,17 @@
 .form__tasks-label {
   .form-text();
   color: @fourth-color-text;
-  display: flex;
+}
+
+.form__tasks-input {
+  margin-right: 15px;
 }
 
 .form__contacts {
   position: relative;
   padding-top: 25px;
   padding-bottom: 25px;
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     width: 99px;
@@ -253,25 +256,36 @@
 }
 
 @media(min-width: @tablet) {
+  .form__original {
+    padding-top: 66px;
+  }
   .form__options {
     margin-bottom: 72px;
+    border-bottom: none;
   }
   .form__wrapper {
     .wrapper-tablet();
   }
   .form__caption {
+    .h1-captions-tablet();
     padding-left: 40px;
   }
   .form__slogan {
     .form-text-tablet();
+    padding: 0;
+    padding-top: 54px;
     padding-left: 40px;
-    padding-bottom: 66px;
   }
-  .form__options-inputs {
+  .form__options-list {
+    padding-left: 40px;
+  }
+  .form__options-item {
     .form-inputs();
     height: 52px;
-    padding-left: 40px;
   }
+  .form__options-item:not(:last-child) {
+    margin-bottom: 20px;
+   }
   .form__options-label {
     .form-text-tablet();
   }
@@ -290,31 +304,58 @@
     width: 497px;
     height: inherit;
   }
+  .form__tasks {
+    width: 630px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    box-sizing: border-box;
+  }
+  .form__tasks-list {
+    margin-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #E7E7E7;
+  }
   .form__tasks-label {
     .form-text-tablet();
     color: @fourth-color-text;
     padding-left: 40px;
   }
   .form__contacts {
+    padding-top: 71px;
+  }
+  .form__contacts {
     position: relative;
     &::before {
       content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #68B738;
       position: absolute;
+      left: 0;
+      top: 90px;
+    }
+    &::after {
       width: 145px;
-      height: 1px;
-      right: 0;
-      top: 16px;
-      background-color: @color-line;
+      height: 2px;
+      top: 90px;
     }
   }
   .form__contacts-title {
     .form-title-tablet();
     width: 512px;
+    padding-bottom: 76px;
+    padding-left: 40px;
   }
-  .form__contacts-inputs {
+  .form__contacts-item {
     .form-inputs();
     height: 52px;
     padding-left: 42px;
+   }
+   .form__contacts-item:not(:last-child) {
+    margin-bottom: 20px;
    }
    .form__contacts-label {
     .form-text-tablet();
