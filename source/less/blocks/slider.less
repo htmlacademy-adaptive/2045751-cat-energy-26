@@ -4,7 +4,70 @@
 @import "../mixins.less";
 
 .slider {
+  position: relative;
   width: 280px;
-  height: 256px;
-  display: flex;
+  min-height: 256px;
+  &::before {
+    content: "";
+    width: 4px;
+    height: 96%;
+    background-color: #666666;
+    position: absolute;
+    left: 50%;
+    border-radius: 2px;
+    z-index: 2;
+  }
+}
+
+.slider__before {
+  position: absolute;
+  width: 142px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slider__after {
+  position: absolute;
+  width: 280px;
+}
+
+.slider__before-img,
+.slider__after-img  {
+  display: block;
+  background-color: #EAEAEA;
+}
+
+@media (min-width: @tablet) {
+  .slider {
+    min-height: 512px;
+    margin-top: 100px;
+    margin-left: 104px;
+    &::before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background-color: #666666;
+      position: absolute;
+      left: 100%;
+      border-radius: 2px;
+      z-index: 2;
+    }
+  }
+  .slider__before,
+  .slider__after {
+    width: 280px;
+    &::before {
+      content: "";
+      width: 280px;
+      height: 149px;
+      background-color: #ffffff;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+    }
+  .slider__before-img,
+  .slider__after-img {
+    background-color: transparent;
+}
+  }
 }
