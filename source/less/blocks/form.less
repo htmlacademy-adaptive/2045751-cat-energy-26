@@ -87,16 +87,41 @@
 }
 
 .form__tasks-item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 }
 
 .form__tasks-label {
+  padding-left: 46px;
   .form-text();
   color: @fourth-color-text;
 }
 
 .form__tasks-input {
-  margin-right: 15px;
+  position: absolute;
+  margin-left: -37px;
+  appearance: none;
+}
+
+.form__tasks-check {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-top: -6px;
+  background-image: url("@{img-address}form-radio.svg");
+  background-repeat: no-repeat;
+}
+
+.form__tasks-input:checked + .form__tasks-check {
+  background-image: url("@{img-address}form-radio-checked.svg");
+}
+
+.form__tasks-input:checked:hover + .form__tasks-check {
+  background-image: url("@{img-address}form-radio-checked-hover.svg");
+}
+
+.form__tasks-input:hover + .form__tasks-check {
+  background-image: url("@{img-address}form-radio-hover.svg");
 }
 
 .form__contacts {
