@@ -179,6 +179,7 @@
 }
 
 .form__comment-text {
+  .form-text();
   width: 100%;
   padding-top: 10px;
   outline: none;
@@ -191,7 +192,6 @@
   .form-text();
   text-align: center;
 }
-
 .form__extra {
   padding-top: 25px;
   padding-bottom: 32px;
@@ -377,32 +377,58 @@
     width: 535px;
     height: inherit;
   }
+  .form__comment-area {
+    padding-top: 70px;
+    padding-left: 40px;
+  }
   .form__comment-label {
     margin: 0;
     .form-title-tablet();
+    padding-bottom: 76px;
   }
   .form__comment-text {
+    height: 174px;
+    .form-text-tablet();
+    padding-left: 19px;
+  }
+  .form__comment-text::placeholder {
     .form-text-tablet();
     text-align: left;
   }
-  .form__extra-checkbox {
+  .form__extra {
+    padding-bottom: 72px;
+  }
+  .form__extra-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 221px);
     column-gap: 123px;
-    padding-left: 40px;
+    row-gap: 32px;
+    padding-bottom: 54px;
+    margin-left: 40px;
   }
   .form__extra-title {
     margin: 0;
+    padding-bottom: 57px;
+    padding-left: 40px;
     .form-title-tablet();
+  }
+  .form__extra-item {
+    display: flex;
+    flex-direction: column;
   }
   .form__extra-label {
     .form-text-tablet();
     width: 221px;
     margin-right: 100px;
   }
+  .form__button {
+    display: flex;
+    margin-left: 40px;
+  }
   .form__button-send {
     width: 282px;
     font-size: 20px;
+    margin-right: 60px;
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: @button-bg-color;

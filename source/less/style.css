@@ -291,6 +291,13 @@
   margin-bottom: 37px;
 }
 .form__comment-text {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
   width: 100%;
   padding-top: 10px;
   outline: none;
@@ -542,6 +549,10 @@
     width: 535px;
     height: inherit;
   }
+  .form__comment-area {
+    padding-top: 70px;
+    padding-left: 40px;
+  }
   .form__comment-label {
     margin: 0;
     font-family: 'Oswald', sans-serif;
@@ -550,8 +561,19 @@
     font-size: 36px;
     line-height: 36px;
     color: #000000;
+    padding-bottom: 76px;
   }
   .form__comment-text {
+    height: 174px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-left: 19px;
+  }
+  .form__comment-text::placeholder {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -560,20 +582,31 @@
     text-transform: uppercase;
     text-align: left;
   }
-  .form__extra-checkbox {
+  .form__extra {
+    padding-bottom: 72px;
+  }
+  .form__extra-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 221px);
     column-gap: 123px;
-    padding-left: 40px;
+    row-gap: 32px;
+    padding-bottom: 54px;
+    margin-left: 40px;
   }
   .form__extra-title {
     margin: 0;
+    padding-bottom: 57px;
+    padding-left: 40px;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
     color: #000000;
+  }
+  .form__extra-item {
+    display: flex;
+    flex-direction: column;
   }
   .form__extra-label {
     font-family: 'Oswald', sans-serif;
@@ -585,9 +618,14 @@
     width: 221px;
     margin-right: 100px;
   }
+  .form__button {
+    display: flex;
+    margin-left: 40px;
+  }
   .form__button-send {
     width: 282px;
     font-size: 20px;
+    margin-right: 60px;
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: #68B738;
