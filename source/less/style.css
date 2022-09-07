@@ -495,23 +495,6 @@
   .form__contacts {
     padding-top: 71px;
   }
-  .form__contacts {
-    position: relative;
-  }
-  .form__contacts::before {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background-color: #68B738;
-    position: absolute;
-    left: 0;
-    top: 90px;
-  }
-  .form__contacts::after {
-    width: 145px;
-    height: 2px;
-    top: 90px;
-  }
   .form__contacts-title {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
