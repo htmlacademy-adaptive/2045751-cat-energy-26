@@ -224,15 +224,6 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.form__contacts::after {
-  content: "";
-  position: absolute;
-  width: 99px;
-  height: 1px;
-  right: 0;
-  top: 40px;
-  background-color: #68B738;
-}
 .form__contacts-title {
   margin: 0;
   font-family: 'Oswald', sans-serif;
@@ -288,18 +279,6 @@
   width: 204px;
   height: inherit;
 }
-.form__comment {
-  position: relative;
-}
-.form__comment::before {
-  content: "";
-  position: absolute;
-  width: 158px;
-  height: 1px;
-  right: 0;
-  top: 16px;
-  background-color: #68B738;
-}
 .form__comment-label {
   margin: 0;
   font-family: 'Oswald', sans-serif;
@@ -330,18 +309,8 @@
   text-align: center;
 }
 .form__extra {
-  position: relative;
   padding-top: 25px;
   padding-bottom: 32px;
-}
-.form__extra::before {
-  content: "";
-  position: absolute;
-  width: 136px;
-  height: 1px;
-  right: 0;
-  top: 40px;
-  background-color: #68B738;
 }
 .form__extra-list {
   margin: 0;
