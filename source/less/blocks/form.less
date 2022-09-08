@@ -28,11 +28,15 @@
 
 .form__original {
   padding-top: 39px;
+  border-bottom: 1px solid #D9D9D9;
 }
 
+.form__wrapper-original {
+  display: grid;
+
+}
 .form__options {
   padding-bottom: 25px;
-  border-bottom: 1px solid #D9D9D9;
 }
 
 .form__options-list {
@@ -77,7 +81,6 @@
 .form__tasks {
   padding-top: 25px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #D9D9D9;
 }
 
 .form__tasks-list {
@@ -251,6 +254,7 @@
 @media(min-width: @tablet) {
   .form__original {
     padding-top: 66px;
+    border-bottom: none;
   }
   .form__options {
     margin-bottom: 72px;
@@ -270,7 +274,8 @@
     padding-left: 40px;
   }
   .form__options-list {
-    padding-left: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
   .form__options-item {
     .form-inputs();
@@ -298,7 +303,7 @@
     height: inherit;
   }
   .form__tasks {
-    width: 630px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 0;
     padding-bottom: 0;
@@ -307,6 +312,7 @@
   }
   .form__tasks-list {
     margin-right: 40px;
+    margin-left: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
     border: 1px solid #E7E7E7;
@@ -348,6 +354,10 @@
   .form__contacts {
     padding-top: 71px;
   }
+  .form__contacts-list {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   .form__contacts-title {
     .form-title-tablet();
     width: 512px;
@@ -357,7 +367,6 @@
   .form__contacts-item {
     .form-inputs();
     height: 52px;
-    padding-left: 42px;
    }
    .form__contacts-item:not(:last-child) {
     margin-bottom: 20px;
@@ -379,7 +388,8 @@
   }
   .form__comment-area {
     padding-top: 70px;
-    padding-left: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
   .form__comment-label {
     margin: 0;
@@ -456,16 +466,27 @@
   .form__wrapper {
     .wrapper-desktop();
   }
+  .form__caption {
+    padding-top: 74px;
+    padding-left: 0;
+  }
   .form__slogan {
     .form-text-desktop();
+    padding-top: 56px;
     padding-left: 0;
   }
-  .form__wrapper-original {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 570px);
-  }
-  .form__options-inputs {
+  .form__options-list {
+    width: 569px;
     padding-left: 0;
+  }
+  .form__input-name {
+    width: 506px;
+  }
+  .form__input-weight {
+    width: 475px;
+  }
+  .form__input-age {
+    width: 436px;
   }
   .form__tasks-label {
     padding-left: 0;
