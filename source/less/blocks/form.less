@@ -273,10 +273,15 @@
     padding-top: 54px;
     padding-left: 40px;
   }
+
+
+
   .form__options-list {
-    margin-right: 40px;
-    margin-left: 40px;
+    .form-margin-tablet();
   }
+
+
+
   .form__options-item {
     .form-inputs();
     height: 52px;
@@ -354,10 +359,13 @@
   .form__contacts {
     padding-top: 71px;
   }
+
+
   .form__contacts-list {
-    margin-left: 40px;
-    margin-right: 40px;
+    .form-margin-tablet();
   }
+
+
   .form__contacts-title {
     .form-title-tablet();
     width: 512px;
@@ -386,11 +394,14 @@
     width: 535px;
     height: inherit;
   }
+
+
   .form__comment-area {
     padding-top: 70px;
-    margin-right: 40px;
-    margin-left: 40px;
+    .form-margin-tablet();
   }
+
+
   .form__comment-label {
     margin: 0;
     .form-title-tablet();
@@ -475,9 +486,15 @@
     padding-top: 56px;
     padding-left: 0;
   }
+  .form__wrapper-original {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 569px);
+    column-gap: 80px;
+  }
   .form__options-list {
     width: 569px;
     padding-left: 0;
+    .form-margin-desktop();
   }
   .form__input-name {
     width: 506px;
@@ -489,20 +506,43 @@
     width: 436px;
   }
   .form__tasks-label {
-    padding-left: 0;
+    padding-left: 70px;
   }
+  .form__tasks-list {
+    .form-margin-desktop();
+  }
+  .form__tasks-item:not(:last-child) {
+    margin-bottom: 24px;
+}
   .form__wrapper-contacts {
     display: flex;
   }
   .form__contacts-label {
     width: 85px;
   }
-  .form__contacts-inputs {
-    width: 486px;
+  .form__contacts-title {
     padding-left: 0;
   }
-  .form__extra-checkbox {
-    column-gap: 104px;
+  .form__contacts-list {
+    width: 486px;
     padding-left: 0;
+    .form-margin-desktop();
+  }
+  .form__comment-area {
+    .form-margin-desktop();
+  }
+  .form__extra-title {
+    padding-left: 0;
+  }
+  .form__extra-list {
+    .form-margin-desktop();
+    column-gap: 104px;
+  }
+  .form__button {
+    margin-left: 0;
+  }
+  .form__button-send {
+    width: 568px;
+    margin-right: 81px;
   }
 }
