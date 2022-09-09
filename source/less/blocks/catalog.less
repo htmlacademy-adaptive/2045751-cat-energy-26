@@ -15,8 +15,11 @@
 }
 
 .catalog__item {
+  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 11px;
+  padding-bottom: 14px;
 }
 
 .catalog__item-promo {
@@ -47,6 +50,13 @@
   font-size: 12px;
   line-height: 16px;
   color: @primary-color-text;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__options-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog__item-link {

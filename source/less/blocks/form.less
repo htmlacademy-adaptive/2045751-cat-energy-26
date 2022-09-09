@@ -114,8 +114,8 @@
 
 .form__tasks-check {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 31px;
+  height: 31px;
   display: block;
   margin-top: -6px;
   background-image: url("@{img-address}form-radio.svg");
@@ -128,10 +128,12 @@
 
 .form__tasks-input:checked:hover + .form__tasks-check {
   background-image: url("@{img-address}form-radio-checked-hover.svg");
+  margin-top: -6px;
 }
 
 .form__tasks-input:hover + .form__tasks-check {
   background-image: url("@{img-address}form-radio-hover.svg");
+  margin-top: -6px;
 }
 
 .form__contacts {
@@ -357,7 +359,7 @@
   }
   .form__tasks-check {
     width: 41px;
-    height: 40px;
+    height: 41px;
     margin-top: -4px;
     background-image: url("@{img-address}form-radio-tablet.svg");
   }
@@ -365,10 +367,12 @@
     background-image: url("@{img-address}form-radio-checked-tablet.svg");
   }
   .form__tasks-input:checked:hover + .form__tasks-check {
+    margin-top: -4px;
     margin-left: 1px;
     background-image: url("@{img-address}form-radio-checked-hover-tablet.svg");
   }
   .form__tasks-input:hover + .form__tasks-check {
+    margin-top: -4px;
     margin-left: 1px;
     background-image: url("@{img-address}form-radio-hover-tablet.svg");
   }
