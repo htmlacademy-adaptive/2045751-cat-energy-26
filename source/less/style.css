@@ -755,6 +755,12 @@
     margin-right: 0;
     margin-left: 0;
   }
+  .form__label-email {
+    width: 94px;
+  }
+  .form__label-phone {
+    width: 110px;
+  }
   .form__comment-area {
     margin-right: 0;
     margin-left: 0;
