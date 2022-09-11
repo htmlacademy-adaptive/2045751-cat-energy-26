@@ -114,8 +114,10 @@
         </section>
 
         <section class="form__contacts">
+          <div class="form__title-wrapper">
+            <h2 class="form__title form__contacts-title">Контактные данные (владельца кота)</h2>
+          </div>
           <div class="form__wrapper">
-            <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
             <ul class="form__contacts-list">
               <li class="form__contacts-item">
                 <label class="form__label form__label-email" for="form__contacts-email">e-mail:<sup>*</sup></label>
@@ -130,18 +132,21 @@
         </section>
 
         <section class="form__comment">
+          <div class="form__title-wrapper">
+            <h2 class="form__title form__comment-title">Комментарий</h2>
+          </div>
           <div class="form__wrapper">
-            <h2 class="visually-hidden">Раздел комментарий</h2>
-              <div class="form__comment-area">
-                <label class="form__comment-label" for="form__comment">Комментарий</label>
-                <textarea id="form__comment" class="form__comment-text" name="form__comment-text" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </div>
+            <div class="form__comment-area">
+              <textarea class="form__comment-text" name="form__comment-text" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </div>
         </section>
 
         <section class="form__extra">
+          <div class="form__title-wrapper form__title-wrapper-extra">
+            <h2 class="form__title form__extra-title">Дополнительно</h2>
+          </div>
           <div class="form__wrapper">
-            <h2 class="form__extra-title">Дополнительно</h2>
             <ul class="form__extra-list">
               <li class="form__extra-item">
                 <label class="form__label form__extra-label">

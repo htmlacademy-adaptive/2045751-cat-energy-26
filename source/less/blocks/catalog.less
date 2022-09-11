@@ -3,8 +3,14 @@
 @import "../vars.less";
 @import "../mixins.less";
 
+.catalog {
+  border-top: 1px solid #D9D9D9;
+}
+
 .catalog__wrapper {
   .wrapper();
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog__list {
@@ -15,16 +21,15 @@
 }
 
 .catalog__item {
-  border: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
+  border-bottom: 1px solid #D9D9D9;
   padding-top: 11px;
-  padding-bottom: 14px;
+  padding-bottom: 25px;
 }
 
 .catalog__item-promo {
   width: 140px;
   text-align: center;
+  margin-top: 10px;
 }
 
 .catalog__item-promo-img {
@@ -38,7 +43,9 @@
 }
 
 .catalog__item-title {
+  width: 80px;
   margin: 0;
+  padding-bottom: 18px;
   .slogan();
   color: @fourth-color-text;
 }
@@ -60,18 +67,30 @@
 }
 
 .catalog__item-link {
+  margin-top: 13px;
   .button-order();
 }
 
 @media(min-width: @tablet) {
+  .catalog {
+    border-top: none;
+  }
+  .catalog-main__caption {
+    .catalog-margin-tablet();
+  }
   .catalog__wrapper {
-    .wrapper-tablet();
+    width: 100%;
   }
   .catalog__list {
+    .catalog-margin-tablet();
     grid-template-columns: repeat(auto-fill, 324px);
+    column-gap: 38px;
   }
   .catalog__item-link {
     .button-order-tablet();
+  }
+  .catalog__item {
+    border-bottom: none;
   }
 }
 
