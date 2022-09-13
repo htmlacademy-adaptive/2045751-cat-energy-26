@@ -144,16 +144,18 @@
 }
 .catalog__item-promo {
   width: 140px;
-  text-align: center;
-  margin-top: 10px;
-}
-.catalog__item-promo-img {
-  position: relative;
-  top: 50%;
-  transform: translate(0, -50%);
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 .catalog__item-description {
   width: 140px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
 }
 .catalog__item-title {
   width: 80px;
@@ -169,11 +171,6 @@
 }
 .catalog__options-list {
   margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
   display: flex;
   flex-direction: column;
 }
@@ -203,24 +200,63 @@
     border-top: none;
   }
   .catalog-main__caption {
-    margin-right: 40px;
-    margin-left: 40px;
+    width: 430px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    margin-right: 30px;
+    margin-left: 30px;
   }
   .catalog__wrapper {
-    width: 100%;
+    width: 252px;
+    justify-content: center;
   }
   .catalog__list {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
     grid-template-columns: repeat(auto-fill, 324px);
-    column-gap: 38px;
+    column-gap: 60px;
   }
   .catalog__item-link {
     width: 248px;
     margin: 0 auto;
+    margin-top: 34px;
   }
   .catalog__item {
     border-bottom: none;
+    background-color: #f2f2f2;
+    margin-top: 145px;
+    padding-bottom: 28px;
+  }
+  .catalog__item-promo {
+    margin-top: 9px;
+  }
+  .catalog__item-title {
+    width: 158px;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .catalog__item-description {
+    width: 248px;
+    margin-top: 34px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+  }
+  .catalog__options-item {
+    height: 22px;
+    border-bottom: 1px solid #CDCDCD;
+    padding-top: 9px;
   }
 }
 @media (min-width: 1440px) {
