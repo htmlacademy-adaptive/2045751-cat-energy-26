@@ -3,12 +3,12 @@
 @import "vars.less";
 
 .wrapper() {
-  width: 280px;
+  width: 28rem;
   margin: 0 auto;
 }
 
 .wrapper-tablet() {
-  width: 708px;
+  width: 70rem;
 }
 
 .wrapper-desktop() {
@@ -100,7 +100,7 @@
   text-transform: uppercase;
 }
 
-.diet-link-tablet {
+.diet-link-tablet() {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
@@ -125,7 +125,7 @@
   color: @primary-color-text;
 }
 
-.button-order {
+.button-order() {
   display: block;
   width: 100%;
   font-family: 'Oswald', sans-serif;
@@ -143,8 +143,16 @@
 }
 
 .button-order-tablet() {
-  width: 248px;
+  width: 25rem;
   margin: 0 auto;
+}
+
+.additional-products-caption-tablet() {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .additional-products-title() {
@@ -173,17 +181,17 @@
   color: @primary-color-text;
 }
 
-.form-margin-tablet {
+.form-margin-tablet() {
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.form-margin-desktop {
+.form-margin-desktop() {
   margin-right: 0;
   margin-left: 0;
 }
 
-.form-input-text {
+.form-input-text() {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -194,7 +202,7 @@
   color: @primary-color-text;
 }
 
-.form-label-text {
+.form-label-text() {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -204,7 +212,7 @@
   color: @primary-color-text;
 }
 
-.form-text-tablet {
+.form-text-tablet() {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -213,7 +221,7 @@
   text-transform: uppercase;
 }
 
-.form-text-desktop {
+.form-text-desktop() {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -222,35 +230,35 @@
   text-transform: uppercase;
 }
 
-.form-item {
+.form-item() {
   height: 46px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.form-item-tablet {
+.form-item-tablet() {
   height: 52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.form-input {
+.form-input() {
   border: 1px solid #E7E7E7;
   outline: none;
   box-sizing: border-box;
 }
 
-.form-input-hover {
+.form-input-hover() {
   border: 1px solid @input-hover;
 }
 
-.form-input-focus {
+.form-input-focus() {
   border: 2px solid @input-focus;
 }
 
-.form-title {
+.form-title() {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -259,7 +267,7 @@
   color: @secondary-color-text;
 }
 
-.form-title-tablet {
+.form-title-tablet() {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -311,3 +319,12 @@
   line-height: 16px;
   color: @primary-color-text;
 }
+
+.link-green-hover() {
+  background-color: #5EAA2F;
+}
+
+.link-green-active() {
+  color: rgba(255, 255, 255, 0.3);
+}
+

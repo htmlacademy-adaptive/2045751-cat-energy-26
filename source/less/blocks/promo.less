@@ -45,6 +45,8 @@
 .promo__poster-img {
   position: relative;
   top: 30px;
+  display: block;
+  margin: 0 auto;
   padding-bottom: 30px;
 }
 
@@ -63,6 +65,14 @@
   color: @tertiary-color-text;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.promo__poster-link:hover {
+  .link-green-hover();
+}
+
+.promo__poster-link:active {
+  .link-green-active();
 }
 
 @media (min-width: @tablet) {
