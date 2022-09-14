@@ -285,11 +285,13 @@
               <a class="catalog__item-link" href="#">Заказать</a>
             </div>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item-show">
             <div class="catalog__wrapper">
               <div class="show-products">
                 <div class="show-products__wrapper">
-                  <button class="show-products__button-plus">+</button>
+                  <button class="show-products__button-add" type="button">
+                    <span class="visually-hidden">Кнопка показать еще товары</span>
+                  </button>
                   <div class="show-products__content">
                     <p class="show-products__title">
                       Показать еще 100500 товаров
@@ -298,7 +300,7 @@
                       На самом деле вкусов гораздо больше!
                     </p>
                   </div>
-                  <button class="show-products__button-show">
+                  <button class="show-products__button-show" type="button">
                     показать все
                   </button>
                 </div>
@@ -309,20 +311,22 @@
       </section>
 
       <section class="additional-products">
-        <div class="additional-products__wrapper">
-          <h2 class="additional-products__caption">Дополнительные товары</h2>
-          <ul class="additional-products__list">
-            <li class="additional-products__item">
-                <p class="additional-products__item-title">
-                  Сахарозаменитель
-                </p>
-                <dl class="additional-products__options-list">
-                  <dt class="additional-products__options-term">1 упаковка (100 г)</dt>
-                  <dd class="additional-products__options-desc">200 Р.</dd>
-                </dl>
-                <a class="additional-products__link" href="#">Заказать</a>
-            </li>
-            <li class="additional-products__item">
+        <h2 class="additional-products__caption">Дополнительные товары</h2>
+        <ul class="additional-products__list">
+          <li class="additional-products__item">
+            <div class="additional-products__wrapper">
+              <p class="additional-products__item-title">
+                Сахарозаменитель
+              </p>
+              <dl class="additional-products__options-list">
+                <dt class="additional-products__options-term">1 упаковка (100 г)</dt>
+                <dd class="additional-products__options-desc">200 Р.</dd>
+              </dl>
+              <a class="additional-products__link" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__wrapper">
               <p class="additional-products__item-title">
                 Питьевая вода
               </p>
@@ -331,8 +335,10 @@
                 <dd class="additional-products__options-desc">50 Р.</dd>
               </dl>
               <a class="additional-products__link" href="#">Заказать</a>
-            </li>
-            <li class="additional-products__item">
+            </div>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__wrapper">
               <p class="additional-products__item-title">
                 Молоко
               </p>
@@ -341,8 +347,10 @@
                 <dd class="additional-products__options-desc">100 Р.</dd>
               </dl>
               <a class="additional-products__link" href="#">Заказать</a>
-            </li>
-            <li class="additional-products__item">
+            </div>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__wrapper">
               <p class="additional-products__item-title">
                 Витамины
               </p>
@@ -351,9 +359,9 @@
                 <dd class="additional-products__options-desc">300 Р.</dd>
               </dl>
               <a class="additional-products__link" href="#">Заказать</a>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="catalog-action">
