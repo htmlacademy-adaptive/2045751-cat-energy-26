@@ -45,7 +45,7 @@
 .catalog-action__slogan {
   position: relative;
   margin: 0;
-  width: 165px;
+  width: 161px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -57,6 +57,20 @@
 @media(min-width: @tablet) {
   .catalog-action__wrapper {
     .wrapper-tablet();
+    min-height: 200px;
+    background-image: url("@{img-address}catalog-action-foto-tablet.png");
+  }
+  .catalog-action__content {
+    width: 506px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .catalog-action__img {
+    margin-bottom: 0;
+  }
+  .catalog-action__slogan {
+    width: 165px;
+    text-align: left;
   }
 }
 
