@@ -16,6 +16,7 @@
   width: 250px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 15px;
 }
 
 .promo__caption {
@@ -40,6 +41,7 @@
 
 .promo__poster {
   .wrapper();
+  padding-bottom: 3px;
 }
 
 .promo__poster-img {
@@ -63,8 +65,8 @@
   text-transform: uppercase;
   text-align: center;
   color: @tertiary-color-text;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .promo__poster-link:hover {
@@ -87,8 +89,8 @@
   }
   .promo__text {
     width: 414px;
-    margin-left: 86px;
-    padding-top: 30px;
+    margin-left: 88px;
+    padding-top: 38px;
     text-align: left;
   }
   .promo__caption {
@@ -105,7 +107,7 @@
     margin: 0;
     order: 1;
     z-index: -1;
-    margin-top: -110px;
+    margin-top: -114px;
   }
   .promo__poster-link {
     width: 244px;
@@ -114,12 +116,15 @@
     line-height: 20px;
     padding-top: 17px;
     padding-bottom: 17px;
-    margin-left: 86px;
+    margin-left: 90px;
     margin-top: 49px;
   }
 }
 
 @media (min-width: @desktop) {
+  .promo {
+    padding-bottom: 43px;
+  }
   .promo__wrapper {
     .wrapper-desktop();
     height: 600px;
@@ -128,16 +133,15 @@
     align-content: flex-start;
   }
   .promo__text {
-    margin-left: 83px;
-    margin-right: -50px;
-    padding-top: 100px;
+    margin-left: 79px;
+    margin-right: -47px;
+    padding-top: 90px;
   }
   .promo__poster {
     z-index: 0;
-    margin-top: 0px;
+    margin-top: -22px;
   }
   .promo__poster-link {
-    left: 190px;
-    top: 50%;
+    margin-left: 80px;
   }
 }

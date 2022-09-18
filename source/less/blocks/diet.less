@@ -11,6 +11,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  row-gap: 33px;
 }
 
 .diet__item {
@@ -19,10 +21,6 @@
   padding-bottom: 22px;
   padding-left: 20px;
   padding-right: 33px;
-}
-
-.diet__item:not(:nth-child(2n)) {
-  margin-bottom: 20px;
 }
 
 .diet__item-title {
@@ -34,7 +32,7 @@
   line-height: 37px;
   text-transform: uppercase;
   padding-bottom: 30px;
-  padding-left: 75px;
+  padding-left: 73px;
   color: @secondary-color-text;
 }
 
@@ -69,13 +67,14 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @secondary-color-text;
-  padding-top: 19px;
+  padding-top: 18px;
   &::after {
     content: "";
     width: 24px;
     height: 12px;
     position: absolute;
     background-image: url("@{img-address}/diet-link-arrow.svg");
+    background-repeat: no-repeat;
     right: 7px;
     bottom: 2px;
   }
@@ -85,46 +84,50 @@
   .diet__wrapper {
     .wrapper-tablet();
   }
+  .diet__list {
+    margin-top: -2px;
+  }
   .diet__item {
-    padding-top: 77px;
+    padding-top: 75px;
     padding-right: 62px;
-    padding-bottom: 53px;
+    padding-bottom: 57px;
     padding-left: 52px;
   }
   .diet__item-title {
-    margin-left: 0;
-    padding-bottom: 24px;
+    margin-left: 1px;
     padding-left: 0;
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
+    padding-bottom: 26px;
+  }
+  .diet__item-title-mass {
+    padding-bottom: 24px;
   }
   .diet__item-description {
     width: 340px;
     .main-text-tablet();
-    padding-bottom: 22px;
-  }
-  .diet__item:not(:nth-child(2n)) {
-    margin-bottom: 30px;
+    padding-bottom: 33px;
+    border-bottom: 0;
   }
   .diet__link {
     width: 165px;
     .diet-link-tablet();
-    border-top: 0;
     &::after {
-      bottom: 8px;
+      right: 9px;
+      bottom: 9px;
     }
   }
   .diet__item-slim {
     background-image: url("@{img-address}/diet-tablet-slim.svg");
     background-repeat: no-repeat;
-    background-position: 90% 50%;
+    background-position: 88% 50%;
   }
 
   .diet__item-mass {
     background-image: url("@{img-address}/diet-tablet-mass.svg");
     background-repeat: no-repeat;
-    background-position: 95% 50%;
+    background-position: 94% 52%;
   }
 }
 
@@ -155,15 +158,15 @@
     line-height: 36px;
   }
   .diet__item-title-slim {
-    padding-left: 62px;
+    padding-left: 20px;
   }
   .diet__item-title-mass {
-    padding-left: 47px;
+    padding-left: 61px;
   }
   .diet__item-description {
     width: 467px;
     .main-text-tablet();
-    padding-bottom: 23px;
+    padding-bottom: 10px;
   }
   .diet__item-slim {
     background-image: url("@{img-address}/diet-desktop-slim.svg");
@@ -178,5 +181,8 @@
   }
   .diet__link {
     width: 168px;
+    &::after {
+      right: 10px;
+    }
   }
 }

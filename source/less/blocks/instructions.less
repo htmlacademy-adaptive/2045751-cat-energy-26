@@ -20,7 +20,7 @@
   font-size: 36px;
   line-height: 40px;
   color: @secondary-color-text;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 }
 
 .instructions__list {
@@ -28,6 +28,8 @@
   padding: 0;
   list-style: none;
   width: 100%;
+  display: grid;
+  row-gap: 20px;
 }
 
 .instructions__item {
@@ -35,10 +37,6 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-}
-
-.instructions__item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .instructions__item-img {
@@ -70,8 +68,8 @@
   .instructions__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 245px);
-    column-gap: 153px;
-    row-gap: 35px;
+    column-gap: 138px;
+    row-gap: 36px;
   }
   .instructions__item {
     flex-direction: column;
@@ -84,19 +82,13 @@
       width: 136px;
       height: 280px;
       position: absolute;
-      right: -20px;
-      top: 38px;
+      right: -16px;
+      top: 39px;
       z-index: -1;
     }
   }
-  .instructions__item:not(:last-child) {
-    margin-bottom: 0px;
-  }
-  .instructions__item:not(:nth-child(2n)) {
-    margin-right: 153px;
-  }
   .instructions__item-img {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
   .instructions__item-text {
     width: 250px;
