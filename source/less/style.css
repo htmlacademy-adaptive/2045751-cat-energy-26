@@ -1,189 +1,87 @@
-.diet__wrapper {
+.contacts {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.contacts__wrapper {
   width: 28rem;
   margin: 0 auto;
+  display: flex;
 }
-.diet__list {
-  list-style: none;
+.contacts__slogan {
   margin: 0;
-  padding: 0;
-  display: grid;
-  row-gap: 33px;
-}
-.diet__item {
-  background-color: #F2F2F2;
-  padding-top: 30px;
-  padding-bottom: 22px;
-  padding-left: 20px;
-  padding-right: 33px;
-}
-.diet__item-title {
-  margin: 0;
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  padding-bottom: 30px;
-  padding-left: 73px;
-  color: #000000;
-}
-.diet__item-slim {
-  background-image: url("../img//diet-slim.svg");
-  background-repeat: no-repeat;
-  background-position: 22px 21px;
-}
-.diet__item-mass {
-  background-image: url("../img//diet-mass.svg");
-  background-repeat: no-repeat;
-  background-position: 13px 24px;
-}
-.diet__item-description {
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-  padding-bottom: 23px;
-  border-bottom: 1px solid #D9D9D9;
-}
-.diet__link {
-  position: relative;
-  display: block;
-  width: 132px;
-  text-decoration: none;
+  width: 139px;
+  margin-right: auto;
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
-  padding-top: 18px;
+  color: #111111;
 }
-.diet__link::after {
-  content: "";
-  width: 24px;
-  height: 12px;
-  position: absolute;
-  background-image: url("../img//diet-link-arrow.svg");
-  background-repeat: no-repeat;
-  right: 7px;
-  bottom: 2px;
+.contacts__address {
+  width: 139px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
 }
 @media (min-width: 768px) {
-  .diet__wrapper {
+  .contacts {
+    padding-top: 59px;
+    padding-bottom: 61px;
+  }
+  .contacts__wrapper {
     width: 70.8rem;
   }
-  .diet__list {
-    margin-top: -2px;
-  }
-  .diet__item {
-    padding-top: 75px;
-    padding-right: 62px;
-    padding-bottom: 57px;
-    padding-left: 52px;
-  }
-  .diet__item-title {
-    margin-left: 1px;
-    padding-left: 0;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    padding-bottom: 26px;
-  }
-  .diet__item-title-mass {
-    padding-bottom: 24px;
-  }
-  .diet__item-description {
-    width: 34rem;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #444444;
-    padding-bottom: 33px;
-    border-bottom: 0;
-  }
-  .diet__link {
-    width: 165px;
-    font-family: 'Oswald';
+  .contacts__slogan {
+    padding-left: 40px;
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     text-transform: uppercase;
   }
-  .diet__link::after {
-    right: 9px;
-    bottom: 9px;
-  }
-  .diet__item-slim {
-    background-image: url("../img//diet-tablet-slim.svg");
-    background-repeat: no-repeat;
-    background-position: 88% 50%;
-  }
-  .diet__item-mass {
-    background-image: url("../img//diet-tablet-mass.svg");
-    background-repeat: no-repeat;
-    background-position: 94% 52%;
-  }
-}
-@media (min-width: 1440px) {
-  .diet__wrapper {
-    width: 1220px;
-  }
-  .diet__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 570px);
-    column-gap: 80px;
-  }
-  .diet__item {
-    padding-top: 77px;
-    padding-right: 51px;
-    padding-bottom: 59px;
-    padding-left: 52px;
-  }
-  .diet__item:not(:nth-child(2n)) {
-    margin-bottom: 0;
-  }
-  .diet__item-title {
-    text-align: center;
-    padding-bottom: 73px;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-  }
-  .diet__item-title-slim {
-    padding-left: 20px;
-  }
-  .diet__item-title-mass {
-    padding-left: 61px;
-  }
-  .diet__item-description {
-    width: 467px;
+  .contacts__address {
+    width: 160px;
+    margin-top: -3px;
+    padding-right: 40px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     color: #444444;
-    padding-bottom: 10px;
+    text-align: right;
   }
-  .diet__item-slim {
-    background-image: url("../img//diet-desktop-slim.svg");
-    background-repeat: no-repeat;
-    background-position: 52px 41px;
+  .contacts__address-city {
+    display: block;
+    margin-top: 21px;
   }
-  .diet__item-mass {
-    background-image: url("../img//diet-desktop-mass.svg");
-    background-repeat: no-repeat;
-    background-position: 33px 47px;
+}
+@media (min-width: 1440px) {
+  .contacts {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
   }
-  .diet__link {
-    width: 168px;
+  .contacts__wrapper {
+    width: 565px;
+    background-color: #ffffff;
+    padding-top: 56px;
+    padding-bottom: 61px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    z-index: 1;
   }
-  .diet__link::after {
-    right: 10px;
+  .contacts__slogan {
+    padding-left: 80px;
+  }
+  .contacts__address {
+    width: 155px;
+    padding-right: 80px;
+    text-align: left;
   }
 }
