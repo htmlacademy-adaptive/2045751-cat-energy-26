@@ -30,12 +30,12 @@
             </a>
           </li>
           <li class="page-header__item page-header__item-burger">
-            <button class="page-header__btn" type="button">
+            <button class="page-header__btn page-header__btn--hidden" type="button">
               <span class="visually-hidden">Кнопка меню гамбургер</span>
             </button>
           </li>
         </ul>
-        <nav class="nav">
+        <nav class="nav nav--nojs">
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-item__link nav-item__link-form" href="index.html">
@@ -206,17 +206,11 @@
 
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/map-desktop-img.png" width="1440" height="400">
-          <source media="(min-width: 768px)" srcset="img/map-tablet-img.png" width="768" height="400">
-          <img class="map__mobile-img" src="img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
-        </picture>
-        <div class="map__pin">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/map-tablet-pin.svg" width="113" height="106">
-            <img class="map__mobile-img" src="img/map-pin.svg" width="57" height="53" alt="Указатель адреса на карте">
-          </picture>
-        </div>
+        <script
+          type="text/javascript" charset="utf-8"
+          async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A914e250b64cc8e328513b4120c737dd125d51221c31e663980eb7e92e89ceca1&amp;
+          width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false">
+        </script>
       </section>
     </main>
 
