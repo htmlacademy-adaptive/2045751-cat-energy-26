@@ -29,12 +29,12 @@
             </a>
           </li>
           <li class="page-header__item page-header__item-burger">
-            <button class="page-header__btn" type="button">
+            <button class="page-header__btn page-header__btn--hidden" type="button">
               <span class="visually-hidden">Кнопка меню гамбургер</span>
             </button>
           </li>
         </ul>
-        <nav class="nav">
+        <nav class="nav nav--nojs">
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-item__link nav-item__link-catalog" href="index.html">
@@ -64,7 +64,16 @@
           <li class="catalog__item">
             <div class="catalog__wrapper">
               <div class="catalog__item-promo">
-                <img class="catalog__item-promo-img" src="img/catalog-500-orange.jpg" width="68" height="86" alt="Корм кэт-энерджи в оранжевой упаковке 500 граммов">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-500-orange-tablet.webp 1x,
+                  img/catalog-500-orange-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="img/catalog-500-orange.webp 1x,
+                  img/catalog-500-orange@2x.webp 2x" width="68" height="86">
+                  <source media="(min-width: 768px)" srcset="img/catalog-500-orange-tablet.png 1x,
+                  img/catalog-500-orange-tablet@2x.png 2x" width="161" height="172">
+                  <img class="catalog__item-promo-img" src="img/catalog-500-orange.png" width="68" height="86"
+                  srcset="img/catalog-500-orange@2x.png 2x" alt="Корм кэт-энерджи в оранжевой упаковке 500 граммов">
+                </picture>
               </div>
               <div class="catalog__item-description">
                 <p class="catalog__item-title">
@@ -91,7 +100,12 @@
           <li class="catalog__item">
             <div class="catalog__wrapper">
               <div class="catalog__item-promo">
-                <img class="catalog__item-promo-img" src="img/catalog-1000-orange.jpg" width="84" height="100" alt="Корм кэт-энерджи в оранжевой упаковке 1000 граммов">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-1000-orange-tablet.png 1x,
+                  img/catalog-1000-orange-tablet@2x.png 2x" width="168" height="206">
+                  <img class="catalog__item-promo-img" src="img/catalog-1000-orange.png" width="84" height="100"
+                  srcset="img/catalog-1000-orange@2x.png 2x" alt="Корм кэт-энерджи в оранжевой упаковке 1000 граммов">
+                </picture>
               </div>
               <div class="catalog__item-description">
                 <p class="catalog__item-title">
@@ -118,7 +132,12 @@
           <li class="catalog__item">
             <div class="catalog__wrapper">
               <div class="catalog__item-promo">
-                <img class="catalog__item-promo-img" src="img/catalog-500-green.jpg" width="68" height="78" alt="Корм кэт-энерджи в зеленой упаковке 500 граммов">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-500-green-tablet.png 1x,
+                  img/catalog-500-green-tablet@2x.png 2x" width="163" height="174">
+                  <img class="catalog__item-promo-img" src="img/catalog-500-green.png" width="68" height="78"
+                  srcset="img/catalog-500-green@2x.png 2x" alt="Корм кэт-энерджи в зеленой упаковке 500 граммов">
+                </picture>
               </div>
               <div class="catalog__item-description">
                 <p class="catalog__item-title">
@@ -145,7 +164,16 @@
           <li class="catalog__item">
             <div class="catalog__wrapper">
               <div class="catalog__item-promo">
-                <img class="catalog__item-promo-img" src="img/catalog-1000-green.jpg" width="84" height="100" alt="Корм кэт-энерджи в зеленой упаковке 1000 граммов">
+                <picture>
+                  <source  type="image/webp" media="(min-width: 768px)" srcset="img/catalog-1000-green-tablet.webp 1x,
+                  img/catalog-1000-green-tablet@2x.webp 2x" width="168" height="200">
+                  <source  type="image/webp" srcset="img/catalog-1000-green.webp 1x,
+                  img/catalog-1000-green@2x.webp 2x" width="84" height="100">
+                  <source media="(min-width: 768px)" srcset="img/catalog-1000-green-tablet.png 1x,
+                  img/catalog-1000-green-tablet@2x.png 2x" width="168" height="200">
+                  <img class="catalog__item-promo-img" src="img/catalog-1000-green.png" width="84" height="100"
+                  srcset="img/catalog-1000-green@2x.png 2x" alt="Корм кэт-энерджи в зеленой упаковке 1000 граммов">
+                </picture>
               </div>
               <div class="catalog__item-description">
                 <p class="catalog__item-title">
@@ -172,7 +200,12 @@
           <li class="catalog__item">
             <div class="catalog__wrapper">
               <div class="catalog__item-promo">
-                <img class="catalog__item-promo-img" src="img/catalog-500-blue.jpg" width="68" height="78" alt="Корм кэт-энерджи в голубой упаковке 500 граммов">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-500-blue-tablet.png 1x,
+                  img/catalog-500-blue-tablet@2x.png 2x" width="161" height="171">
+                  <img class="catalog__item-promo-img" src="img/catalog-500-blue.png" width="68" height="78"
+                  srcset="img/catalog-500-blue@2x.png 2x" alt="Корм кэт-энерджи в голубой упаковке 500 граммов">
+                </picture>
               </div>
               <div class="catalog__item-description">
                 <p class="catalog__item-title">
@@ -199,7 +232,12 @@
           <li class="catalog__item">
             <div class="catalog__wrapper">
               <div class="catalog__item-promo">
-                <img class="catalog__item-promo-img" src="img/catalog-1000-blue.jpg" width="84" height="100" alt="Корм кэт-энерджи в голубой упаковке 1000 граммов">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-1000-blue-tablet.png 1x,
+                  img/catalog-1000-blue-tablet@2x.png 2x" width="168" height="200">
+                  <img class="catalog__item-promo-img" src="img/catalog-1000-blue.png" width="84" height="100"
+                  srcset="img/catalog-1000-blue@2x.png 2x" alt="Корм кэт-энерджи в голубой упаковке 1000 граммов">
+                </picture>
               </div>
               <div class="catalog__item-description">
                 <p class="catalog__item-title">
@@ -226,7 +264,12 @@
           <li class="catalog__item">
             <div class="catalog__wrapper">
               <div class="catalog__item-promo">
-                <img class="catalog__item-promo-img" src="img/catalog-500-violet.jpg" width="72" height="84" alt="Корм кэт-энерджи в фиолетовой упаковке 500 граммов">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-500-violet-tablet.png 1x,
+                  img/catalog-500-violet-tablet@2x.png 2x" width="163" height="174">
+                  <img class="catalog__item-promo-img" src="img/catalog-500-violet.png" width="72" height="84"
+                  srcset="img/catalog-500-violet@2x.png 2x" alt="Корм кэт-энерджи в фиолетовой упаковке 500 граммов">
+                </picture>
               </div>
               <div class="catalog__item-description">
                 <p class="catalog__item-title">
@@ -250,11 +293,13 @@
               <a class="catalog__item-link" href="#">Заказать</a>
             </div>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item-show">
             <div class="catalog__wrapper">
               <div class="show-products">
                 <div class="show-products__wrapper">
-                  <button class="show-products__button-plus">+</button>
+                  <button class="show-products__button-add" type="button">
+                    <span class="visually-hidden">Кнопка показать еще товары</span>
+                  </button>
                   <div class="show-products__content">
                     <p class="show-products__title">
                       Показать еще 100500 товаров
@@ -263,7 +308,7 @@
                       На самом деле вкусов гораздо больше!
                     </p>
                   </div>
-                  <button class="show-products__button-show">
+                  <button class="show-products__button-show" type="button">
                     показать все
                   </button>
                 </div>
@@ -274,62 +319,73 @@
       </section>
 
       <section class="additional-products">
-        <div class="additional-products__wrapper">
-          <h2 class="additional-products__caption">Дополнительные товары</h2>
+        <h2 class="additional-products__caption">Дополнительные товары</h2>
+        <div class="additional-products__content">
           <ul class="additional-products__list">
             <li class="additional-products__item">
+              <div class="additional-products__wrapper">
+
+                  <p class="additional-products__item-title">
+                    Сахарозаменитель
+                  </p>
+                  <dl class="additional-products__options-list">
+                    <dt class="additional-products__options-term">1 упаковка (100 г)</dt>
+                    <dd class="additional-products__options-desc">200 Р.</dd>
+                  </dl>
+
+                <a class="additional-products__link" href="#">Заказать</a>
+              </div>
+            </li>
+            <li class="additional-products__item">
+              <div class="additional-products__wrapper">
                 <p class="additional-products__item-title">
-                  Сахарозаменитель
+                Питьевая вода
                 </p>
                 <dl class="additional-products__options-list">
-                  <dt class="additional-products__options-term">1 упаковка (100 г)</dt>
-                  <dd class="additional-products__options-desc">200 Р.</dd>
+                  <dt class="additional-products__options-term">5 литров</dt>
+                  <dd class="additional-products__options-desc">50 Р.</dd>
                 </dl>
                 <a class="additional-products__link" href="#">Заказать</a>
+              </div>
             </li>
             <li class="additional-products__item">
-              <p class="additional-products__item-title">
-                Питьевая вода
-              </p>
-              <dl class="additional-products__options-list">
-                <dt class="additional-products__options-term">5 литров</dt>
-                <dd class="additional-products__options-desc">50 Р.</dd>
-              </dl>
-              <a class="additional-products__link" href="#">Заказать</a>
+              <div class="additional-products__wrapper">
+                  <p class="additional-products__item-title">
+                    Молоко
+                  </p>
+                  <dl class="additional-products__options-list">
+                    <dt class="additional-products__options-term">1 литр</dt>
+                    <dd class="additional-products__options-desc">100 Р.</dd>
+                  </dl>
+                  <a class="additional-products__link" href="#">Заказать</a>
+              </div>
             </li>
             <li class="additional-products__item">
-              <p class="additional-products__item-title">
-                Молоко
-              </p>
-              <dl class="additional-products__options-list">
-                <dt class="additional-products__options-term">1 литр</dt>
-                <dd class="additional-products__options-desc">100 Р.</dd>
-              </dl>
-              <a class="additional-products__link" href="#">Заказать</a>
-            </li>
-            <li class="additional-products__item">
-              <p class="additional-products__item-title">
-                Витамины
-              </p>
-              <dl class="additional-products__options-list">
-                <dt class="additional-products__options-term">1 упаковка (30 г)</dt>
-                <dd class="additional-products__options-desc">300 Р.</dd>
-              </dl>
-              <a class="additional-products__link" href="#">Заказать</a>
+              <div class="additional-products__wrapper">
+                  <p class="additional-products__item-title">
+                    Витамины
+                  </p>
+                  <dl class="additional-products__options-list">
+                    <dt class="additional-products__options-term">1 упаковка (30 г)</dt>
+                    <dd class="additional-products__options-desc">300 Р.</dd>
+                  </dl>
+                <a class="additional-products__link" href="#">Заказать</a>
+              </div>
             </li>
           </ul>
-        </div>
-      </section>
-
-      <section class="catalog-action">
-        <div class="catalog-action__wrapper">
-          <h2 class="visually-hidden">Акции</h2>
-          <img class="catalog-action__img" src="img/catalog-action__logo.svg" alt="Изображение подарка">
-          <p class="catalog-action__slogan">
-            Закажите все<br>
-            и получите чехол для<br>
-            кота в подарок!
-          </p>
+          <div class="catalog-action">
+            <div class="catalog-action__wrapper">
+              <h2 class="visually-hidden">Акции</h2>
+              <div class="catalog-action__content">
+                <img class="catalog-action__img" src="img/catalog-action__logo.svg" alt="Изображение подарка">
+                <p class="catalog-action__slogan">
+                  Закажите все<br>
+                  и получите чехол для<br>
+                  кота в подарок!
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -349,11 +405,11 @@
 
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/map-desktop-img.png" width="1440" height="400">
-          <source media="(min-width: 768px)" srcset="img/map-tablet-img.png" width="768" height="400">
-          <img class="map__mobile-img" src="img/map-img.png" width="320" height="362" alt="интренет магазин на карте">
-        </picture>
+        <script
+          type="text/javascript" charset="utf-8"
+          async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A914e250b64cc8e328513b4120c737dd125d51221c31e663980eb7e92e89ceca1&amp;
+          width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false">
+        </script>
       </section>
 
       <footer class="page-footer">
