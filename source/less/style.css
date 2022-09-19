@@ -1,15 +1,9 @@
-// out: "../style.css"
-
-@import "../vars.less";
-@import "../mixins.less";
-
 .map {
   background-color: #f2f2f2;
   position: relative;
   text-align: center;
   min-height: 362px;
 }
-
 .map__img {
   position: absolute;
   display: block;
@@ -18,7 +12,6 @@
   transform: translate(-50%, 0);
   z-index: -1;
 }
-
 .map__pin {
   position: absolute;
   left: 50%;
@@ -26,14 +19,12 @@
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-
-@media(min-width: @tablet) {
+@media (min-width: 768px) {
   .map {
     min-height: 400px;
   }
 }
-
-@media(min-width: @desktop) {
+@media (min-width: 1440px) {
   .map {
     min-height: 400px;
   }
@@ -42,4 +33,3 @@
     top: 45%;
   }
 }
-
