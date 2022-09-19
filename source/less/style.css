@@ -179,6 +179,10 @@
   background-image: url("../img/form-radio-hover.svg");
   margin-top: -6px;
 }
+.form__tasks-input:checked:focus + .form__tasks-check {
+  background-image: url("../img/form-radio-checked-focus.svg");
+  margin-top: -6px;
+}
 .form__contacts {
   position: relative;
   padding-top: 25px;
@@ -247,6 +251,9 @@
   color: #444444;
   text-align: left;
 }
+.form__comment-text:focus {
+  outline: 2px solid #444444;
+}
 .form__extra {
   padding-top: 25px;
   padding-bottom: 32px;
@@ -291,6 +298,12 @@
 }
 .form__extra-input:hover + .form__extra-check {
   background-image: url("../img/form-checkbox-hover.svg");
+}
+.form__extra-input:checked:focus + .form__extra-check {
+  background-image: url("../img/form-checkbox-active-focus.svg");
+}
+.form__extra-input:focus + .form__extra-check {
+  background-image: url("../img/form-checkbox-focus.svg");
 }
 .form__button-send {
   width: 100%;
@@ -464,6 +477,11 @@
     margin-left: 1px;
     background-image: url("../img/form-radio-hover-tablet.svg");
   }
+  .form__tasks-input:checked:focus + .form__tasks-check {
+    margin-top: -4px;
+    margin-left: 1px;
+    background-image: url("../img/form-radio-checked-tablet-focus.svg");
+  }
   .form__contacts {
     padding-top: 71px;
     padding-bottom: 68px;
@@ -591,6 +609,12 @@
   }
   .form__extra-input:hover + .form__extra-check {
     background-image: url("../img/form-checkbox-hover-tablet.svg");
+  }
+  .form__extra-input:checked:focus + .form__extra-check {
+    background-image: url("../img/form-checkbox-active-focus-tablet.svg");
+  }
+  .form__extra-input:focus + .form__extra-check {
+    background-image: url("../img/form-checkbox-focus-tablet.svg");
   }
   .form__button {
     display: flex;

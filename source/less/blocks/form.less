@@ -179,6 +179,11 @@
   margin-top: -6px;
 }
 
+.form__tasks-input:checked:focus + .form__tasks-check {
+  background-image: url("@{img-address}form-radio-checked-focus.svg");
+  margin-top: -6px;
+}
+
 .form__contacts {
   position: relative;
   padding-top: 25px;
@@ -242,6 +247,10 @@
   text-align: left;
 }
 
+.form__comment-text:focus {
+  outline: 2px solid #444444;
+}
+
 .form__extra {
   padding-top: 25px;
   padding-bottom: 32px;
@@ -294,6 +303,14 @@
 
 .form__extra-input:hover + .form__extra-check {
   background-image: url("@{img-address}form-checkbox-hover.svg");
+}
+
+.form__extra-input:checked:focus + .form__extra-check {
+  background-image: url("@{img-address}form-checkbox-active-focus.svg");
+}
+
+.form__extra-input:focus + .form__extra-check {
+  background-image: url("@{img-address}form-checkbox-focus.svg");
 }
 
 .form__button-send {
@@ -437,6 +454,12 @@
     margin-left: 1px;
     background-image: url("@{img-address}form-radio-hover-tablet.svg");
   }
+  .form__tasks-input:checked:focus + .form__tasks-check {
+    margin-top: -4px;
+    margin-left: 1px;
+    background-image: url("@{img-address}form-radio-checked-tablet-focus.svg");
+  }
+
   .form__contacts {
     padding-top: 71px;
     padding-bottom: 68px;
@@ -513,14 +536,12 @@
     width: 221px;
     padding-left: 58px;
   }
-
   .form__extra-input {
     position: absolute;
     appearance: none;
     margin-left: -44px;
     margin-top: 9px;
   }
-
   .form__extra-check {
     width: 40px;
     height: 40px;
@@ -528,19 +549,21 @@
     background-repeat: no-repeat;
     margin-top: -5px;
   }
-
   .form__extra-input:checked + .form__extra-check {
     background-image: url("@{img-address}form-checkbox-active-tablet.svg");
   }
-
   .form__extra-input:checked:hover + .form__extra-check {
     background-image: url("@{img-address}form-checkbox-active-hover-tablet.svg");
   }
-
   .form__extra-input:hover + .form__extra-check {
     background-image: url("@{img-address}form-checkbox-hover-tablet.svg");
   }
-
+  .form__extra-input:checked:focus + .form__extra-check {
+    background-image: url("@{img-address}form-checkbox-active-focus-tablet.svg");
+  }
+  .form__extra-input:focus + .form__extra-check {
+    background-image: url("@{img-address}form-checkbox-focus-tablet.svg");
+  }
   .form__button {
     display: flex;
     margin-left: 40px;
