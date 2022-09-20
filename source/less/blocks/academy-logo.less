@@ -1,9 +1,3 @@
-// out: "../style.css"
-
-@import "../vars.less";
-@import "../mixins.less";
-
-
 .academy-logo {
   display: flex;
   width: 100%;
@@ -18,6 +12,7 @@
   display: block;
   margin-right: auto;
 }
+
 
 .academy-logo__name-text {
   margin: 0;
@@ -34,6 +29,18 @@
 
 .academy-logo__img {
   display: block;
+}
+
+.academy-logo:hover .academy-logo__img {
+  fill: #68B738;
+}
+
+.academy-logo:active .academy-logo__img{
+  fill: rgba(104, 183, 56, 0.3);
+}
+
+.academy-logo:active .academy-logo__name-text{
+  color: rgba(104, 183, 56, 0.3);
 }
 
 @media(min-width: @tablet) {

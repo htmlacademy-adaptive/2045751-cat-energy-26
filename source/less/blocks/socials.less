@@ -1,8 +1,3 @@
-// out: "../style.css"
-
-@import "../vars.less";
-@import "../mixins.less";
-
 .socials {
   padding-top: 21px;
   padding-bottom: 20px;
@@ -21,7 +16,7 @@
 }
 
 .socials__item:not(:nth-child(3n)) {
-  margin-right: 25px;
+  margin-right: 28px;
 }
 
 .socials__item-img {
@@ -42,6 +37,12 @@
   }
   .socials__list {
     width: 13.1rem;
+  }
+}
+
+@media(min-width: @desktop) {
+  .socials__list {
+   margin-top: -4px;
   }
 }
 
