@@ -1,8 +1,3 @@
-// out: "../style.css"
-
-@import "../vars.less";
-@import "../mixins.less";
-
 .promo {
   padding-top: 10px;
   padding-bottom: 20px;
@@ -30,7 +25,7 @@
 .promo__slogan {
   margin: 0;
   position: relative;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -137,11 +132,15 @@
     margin-right: -47px;
     padding-top: 90px;
   }
+  .promo__caption {
+    padding-bottom: 39px;
+  }
   .promo__poster {
     z-index: 0;
     margin-top: -22px;
   }
   .promo__poster-link {
+    margin-top: 53px;
     margin-left: 80px;
   }
 }

@@ -1,8 +1,3 @@
-// out: "../style.css"
-
-@import "../vars.less";
-@import "../mixins.less";
-
 .diet__wrapper {
   .wrapper();
 }
@@ -12,7 +7,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  row-gap: 33px;
+  row-gap: 19px;
 }
 
 .diet__item {
@@ -32,7 +27,7 @@
   line-height: 37px;
   text-transform: uppercase;
   padding-bottom: 30px;
-  padding-left: 73px;
+  padding-left: 71px;
   color: @secondary-color-text;
 }
 
@@ -86,6 +81,7 @@
   }
   .diet__list {
     margin-top: -2px;
+    row-gap: 31px;
   }
   .diet__item {
     padding-top: 75px;
@@ -102,7 +98,7 @@
     padding-bottom: 26px;
   }
   .diet__item-title-mass {
-    padding-bottom: 24px;
+    padding-bottom: 27px;
   }
   .diet__item-description {
     width: 34rem;
@@ -127,7 +123,7 @@
   .diet__item-mass {
     background-image: url("@{img-address}/diet-tablet-mass.svg");
     background-repeat: no-repeat;
-    background-position: 94% 52%;
+    background-position: 94% 53%;
   }
 }
 
@@ -139,6 +135,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 570px);
     column-gap: 80px;
+    margin-top: 0;
   }
   .diet__item {
     padding-top: 77px;
@@ -152,7 +149,7 @@
   }
   .diet__item-title {
     text-align: center;
-    padding-bottom: 73px;
+    padding-bottom: 75px;
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
@@ -166,7 +163,7 @@
   .diet__item-description {
     width: 467px;
     .main-text-tablet();
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
   .diet__item-slim {
     background-image: url("@{img-address}/diet-desktop-slim.svg");
@@ -182,7 +179,7 @@
   .diet__link {
     width: 168px;
     &::after {
-      right: 10px;
+      right: 12px;
     }
   }
 }
